@@ -1,0 +1,49 @@
+{
+	"name": "ommu/carservx",
+	"description": "Carservx - Car Service and Car Repair",
+	"type": "ommu-theme",
+	"keywords": [
+		"theme",
+		"carservx",
+		"bootstrap3",
+		"automotive",
+		"auto-center",
+		"auto-service",
+		"auto-repair",
+		"car-service",
+		"car-repair",
+		"bootstrap3",
+		"ommu",
+		"ommu-platform",
+		"yii2"
+	],
+	"license": "Apache-2.0",
+	"homepage": "https://github.com/ommu/theme-carservx",
+	"support": {
+		"issues": "https://github.com/ommu/theme-carservx/issues",
+		"wiki": "https://github.com/ommu/theme-carservx/wiki",
+		"source": "https://github.com/ommu/theme-carservx"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ommu/theme-carservx.git"
+	},
+	"authors": [
+		{
+			"name": "Putra Sudaryanto",
+			"email": "putra@sudaryanto.id",
+			"homepage": "https://sudaryanto.id",
+			"role": "Developer"
+		},
+		{
+			"name": "thewebmax",
+			"homepage": "https://themeforest.net/user/thewebmax",
+			"role": "Creator"
+		}
+	],
+	"require": {
+		"php": "~7.0",
+		"yiisoft/yii2": "~2.0.14",
+		"yiisoft/yii2-bootstrap4": "~2.0.0"
+	}
+}

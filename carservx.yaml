@@ -1,0 +1,11 @@
+name: Carservx
+desc: Carservx - Car Service and Car Repair
+
+author:
+  name: Putra Sudaryanto
+  phone: (+62)856-299-4114
+  email: putra@sudaryanto.id
+  homepage: https://sudaryanto.id
+
+theme_setting:
+  bootstrap4: false
