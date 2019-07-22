@@ -27,33 +27,8 @@ $this->beginPage();?>
 	</script>
 </head>
 
-<body class="">
+<body>
 <?php $this->beginBody();?>
-
-<?php //begin.loading ?>
-<div class="loading-area">
-	<div class="loading-box"></div>
-	<div class="loading-pic">
-		<div class="cssload-container">
-			<ul class="cssload-flex-container">
-				<li>
-				<span class="cssload-loading"></span>
-				</li>
-			</ul>
-		</div>
-	</div>
-</div>
-
-<?php //begin.modal ?>
-<div class="modal fade" id="defaultModal" tabindex="-1" role="dialog">
-	<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-		<div class="modal-content">
-			<div class="modal-body">
-				loading...
-			</div>
-		</div>
-	</div>
-</div>
 
 <div class="page-wraper">
 	<?php //begin.header ?>
@@ -251,8 +226,36 @@ $this->beginPage();?>
 			</div>
 		</div>
 		<!-- FOOTER COPYRIGHT -->
+
+		<!-- BUTTON TOP START -->
+		<button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
 	</footer>
 	<?php //end.footer ?>
+</div>
+
+<?php //begin.loading ?>
+<div class="loading-area">
+	<div class="loading-box"></div>
+	<div class="loading-pic">
+		<div class="cssload-container">
+			<ul class="cssload-flex-container">
+				<li>
+				<span class="cssload-loading"></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<?php //begin.modal ?>
+<div class="modal fade" id="defaultModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				loading...
+			</div>
+		</div>
+	</div>
 </div>
 
 <?php if($isDemoTheme) {?>
@@ -267,12 +270,12 @@ $this->beginPage();?>
 	<div class="styleswitcher-inner">
 		<h6 class="switcher-title">Color Skin</h6>
 		<ul class="color-skins">
-			<li><a class="theme-skin skin-1" href="#skin-1" title="default Theme"></a></li>
-			<li><a class="theme-skin skin-2" href="#skin-2" title="pink Theme"></a></li>
-			<li><a class="theme-skin skin-3" href="#skin-3" title="sky Theme"></a></li>
-			<li><a class="theme-skin skin-4" href="#skin-4" title="green Theme"></a></li>
-			<li><a class="theme-skin skin-5" href="#skin-5" title="red Theme"></a></li>
-			<li><a class="theme-skin skin-6" href="#skin-6" title="orange Theme"></a></li>
+			<li><a class="theme-skin skin-1" href="?theme=css/skin/skin-1" title="default Theme"></a></li>
+			<li><a class="theme-skin skin-2" href="?theme=css/skin/skin-2" title="pink Theme"></a></li>
+			<li><a class="theme-skin skin-3" href="?theme=css/skin/skin-3" title="sky Theme"></a></li>
+			<li><a class="theme-skin skin-4" href="?theme=css/skin/skin-4" title="green Theme"></a></li>
+			<li><a class="theme-skin skin-5" href="?theme=css/skin/skin-5" title="red Theme"></a></li>
+			<li><a class="theme-skin skin-6" href="?theme=css/skin/skin-6" title="orange Theme"></a></li>
 		</ul>
 	</div>
 </div>

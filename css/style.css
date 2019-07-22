@@ -9534,7 +9534,7 @@ STEP NUMBER
 }
 /*--------two-part-bg------*/
 .two-part-bg{
-	background-image: url(../images/car-left.png), url(../images/car-right.png);
+	background-image: url(../demo/images/car-left.png), url(../demo/images/car-right.png);
 	background-position: left bottom, right  bottom;
 	background-repeat: no-repeat, no-repeat;
 	margin-bottom:50px;

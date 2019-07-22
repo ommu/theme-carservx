@@ -1,20 +1,20 @@
 <?php
 namespace themes\carservx\assets;
 
-class ThemePluginAsset extends \yii\web\AssetBundle
+class SwitcherPluginAsset extends \yii\web\AssetBundle
 {
 	public $sourcePath = '@themes/carservx';
 
+	public $css = [
+		"css/switcher.css",
+	];
+
 	public $js = [
-		"js/custom.js",
+		'js/switcher.js',
 	];
 
 	public $depends = [
 		'yii\web\JqueryAsset',
-		'themes\carservx\assets\ThemeAsset',
-		"yii\bootstrap\BootstrapPluginAsset",
-		'themes\carservx\assets\WaypointsPluginAsset',
-		'themes\carservx\assets\SwitcherPluginAsset',
 	];
 
 	public $publishOptions = [
@@ -23,6 +23,9 @@ class ThemePluginAsset extends \yii\web\AssetBundle
 			'assets/',
 			'components/',
 			'controllers/',
+			'demo/',
+			'fonts/',
+			'images/',
 			'layouts/',
 			'modules/',
 			'site/',
