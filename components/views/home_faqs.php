@@ -41,7 +41,7 @@ $context = $this->context;
 								<h4 class="acod-title bg-white">
 										<a data-toggle="collapse" href="#collapseOne5" data-parent="#accordion5" >
 											<span class="indicator"><i class="fa"></i></span>
-										   When Should i Replace My Fuel Filter?
+											When Should i Replace My Fuel Filter?
 										</a>
 									 </h4>
 							</div>
@@ -54,7 +54,7 @@ $context = $this->context;
 								<h4 class="acod-title bg-white">
 										<a data-toggle="collapse" href="#collapseTwo5" class="collapsed" data-parent="#accordion5" >
 										<span class="indicator"><i class="fa"></i></span>
-									   Must i get Air Conditioning Serviced? 
+										Must i get Air Conditioning Serviced? 
 										</a>
 									 </h4>
 							</div>
@@ -65,7 +65,7 @@ $context = $this->context;
 						<div class="panel wt-panel">
 							<div class="acod-head">
 								<h4 class="acod-title bg-white">
-									<a data-toggle="collapse"  href="#collapseThree5" class="collapsed"  data-parent="#accordion5">
+									<a data-toggle="collapse" href="#collapseThree5" class="collapsed" data-parent="#accordion5">
 									<span class="indicator"><i class="fa"></i></span>
 									How Long it Take To Repair My Vehicle?
 									</a>

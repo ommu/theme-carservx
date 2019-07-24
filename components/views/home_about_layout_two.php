@@ -62,7 +62,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 					<div class="wt-icon-box-wraper m-b50">
 						<div class="relative icon-count-2 bg-white p-a30">
 							<span class="icon-count-number">03</span>
-							<div class="icon-xl inline-icon m-b25  text-primary">
+							<div class="icon-xl inline-icon m-b25 text-primary">
 								<span class="icon-cell"><i class="flaticon-car-parts"></i></span>
 							</div>
 							<div class="icon-content">

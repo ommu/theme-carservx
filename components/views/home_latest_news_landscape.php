@@ -29,7 +29,7 @@ $context = $this->context;
 						<div class="wt-post-media wt-img-effect zoom-slow">
 							<a href="javascript:;"><img src="<?php echo $themeAsset->baseUrl ?>/demo/images/blog/recent-blog/pic1.jpg" alt=""></a>
 						</div>
-						<div class="wt-post-info  bg-white">
+						<div class="wt-post-info bg-white">
 							<div class="wt-post-meta ">
 								<ul>
 									<li class="post-date">March 9, 2019</li>
@@ -50,7 +50,7 @@ $context = $this->context;
 						<div class="wt-post-media wt-img-effect zoom-slow">
 							<a href="javascript:;"><img src="<?php echo $themeAsset->baseUrl ?>/demo/images/blog/recent-blog/pic2.jpg" alt=""></a>
 						</div>
-						<div class="wt-post-info  bg-white">
+						<div class="wt-post-info bg-white">
 							<div class="wt-post-meta ">
 								<ul>
 									<li class="post-date">March 20, 2019</li>

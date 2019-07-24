@@ -44,14 +44,14 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-4.js', ['depends' =
 				</div>
 
 				<!-- LAYER 2 button -->
-				<div class="tp-caption rev-btn  tp-resizeme" id="rrzb_904-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['120','120','120','120']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":500,"to":"o:1;","delay":500,"split":"chars","splitdelay":0.03,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power2.easeIn"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index:9; line-height:30px;"><a href="Javascript:;" class="site-button site-btn-effect">Read More</a></div>
+				<div class="tp-caption rev-btn tp-resizeme" id="rrzb_904-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['120','120','120','120']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":500,"to":"o:1;","delay":500,"split":"chars","splitdelay":0.03,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power2.easeIn"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index:9; line-height:30px;"><a href="Javascript:;" class="site-button site-btn-effect">Read More</a></div>
 
 				<!-- LAYER 5 title-->
-				<div class="tp-caption   tp-resizeme slider-tag-line2 text-white" id="rrzb_904-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"delay":300,"speed":750,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},
+				<div class="tp-caption tp-resizeme slider-tag-line2 text-white" id="rrzb_904-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"delay":300,"speed":750,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},
 					{"delay":"wait","speed":500,"sfxcolor":"#ffffff","sfx_effect":"blocktoleft","frame":"999","to":"z:0;","ease":"Power4.easeOut"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[10,10,10,10]" data-paddingright="[20,20,20,20]" data-paddingbottom="[10,10,10,10]" data-paddingleft="[0,0,0,0]" style="z-index: 10; white-space: nowrap; font-size: 18px; line-height: 20px; font-weight: 400;font-family: 'Poppins', sans-serif; text-transform:uppercase;"> Trust our services </div>
 
-				<!-- LAYER 6  tag line-->
-				<div class="tp-caption   tp-resizeme" id="rrzb_904-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['60','45','60','40']" data-lineheight="['70','60','70','50']" data-width="['700','650','620','380']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":200,"speed":750,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},
+				<!-- LAYER 6 tag line-->
+				<div class="tp-caption tp-resizeme" id="rrzb_904-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['60','45','60','40']" data-lineheight="['70','60','70','50']" data-width="['700','650','620','380']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":200,"speed":750,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},
 					{"delay":"wait","speed":500,"sfxcolor":"#ffffff","sfx_effect":"blocktoleft","frame":"999","to":"z:0;","ease":"Power4.easeOut"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[20,20,20,20]" data-paddingright="[20,20,20,20]" data-paddingbottom="[30,30,30,30]" data-paddingleft="[0,0,0,0]" style="z-index: 10; white-space: normal;font-weight: 700; color: #ffffff; font-family: 'Fjalla One', sans-serif;">Let Your Problem Be Our Problem</div>
 
 			</li>
@@ -62,7 +62,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-4.js', ['depends' =
 <!-- SLIDER END -->
 
 <!-- WHY CHOOSE SECTION START -->
-<div class="section-full small-device  p-t80 p-b80 bg-gray">
+<div class="section-full small-device p-t80 p-b80 bg-gray">
 	<div class="container">
 		<!-- TITLE START -->
 		<div class="section-head text-center">
@@ -93,7 +93,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-4.js', ['depends' =
 									<span class="icon-cell text-primary"><i class="flaticon-secure-shield"></i></span>
 								</div>
 								<div class="icon-content">
-									<h5 class="wt-tilte  m-b0">Who We Are</h5>
+									<h5 class="wt-tilte m-b0">Who We Are</h5>
 								</div>
 							</div>
 						</a>
@@ -120,7 +120,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-4.js', ['depends' =
 									<div class="wt-box m-b30">
 										<h4 class="wt-tilte wt-tilte m-t0">Long Term Warranties And Competitive Prices we repair anything from hardware.</h4>
 										<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
-										<ul class="list-angle-right  m-b0">
+										<ul class="list-angle-right m-b0">
 											<li>Our Technicians are highly qualified</li>
 											<li>There are many variations</li>
 											<li>We supply the after market</li>
@@ -147,7 +147,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-4.js', ['depends' =
 									<div class="wt-box m-b30">
 										<h4 class="wt-tilte m-t0">Term Warranties And Competitive Prices we repair anything from hardware.</h4>
 										<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
-										<ul class="list-angle-right  m-b0">
+										<ul class="list-angle-right m-b0">
 											<li>There are many variations</li>
 											<li>Our Technicians are highly qualified</li>
 											<li>We supply the after market</li>
@@ -174,7 +174,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-4.js', ['depends' =
 									<div class="wt-box m-b30">
 										<h4 class="wt-tilte wt-tilte m-t0">Long Warranties And Competitive Prices we repair anything from hardware.</h4>
 										<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
-										<ul class="list-angle-right  m-b0">
+										<ul class="list-angle-right m-b0">
 											<li>Our Technicians are highly qualified</li>
 											<li>We supply the after market</li>
 											<li>We only use new parts</li>

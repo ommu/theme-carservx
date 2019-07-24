@@ -33,7 +33,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 				</div>
 			</div>
 			<div class="col-md-4 talk-section-mid2">
-				<div class="want-to-talk  text-center">
+				<div class="want-to-talk text-center">
 					<h2 class="m-b5">Want to talk?</h2>
 					<h2 class="text-primary talk-sepr-white">Call:(123) 556 4321</h2>
 					<p>Need a special repair service? we are happy to fulfil every request in order to exceed your expectations</p>

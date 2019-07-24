@@ -27,7 +27,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 			<div class="row no-col-gap">
 				<div class="col-md-4 col-sm-6">
 
-					<div class="wt-icon-box-wraper p-a30 text-white bg-no-repeat bg-cover overlay-wraper  m-b30 bg-dark-section-hover v-icon-effect" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/info/pic1.jpg);">
+					<div class="wt-icon-box-wraper p-a30 text-white bg-no-repeat bg-cover overlay-wraper m-b30 bg-dark-section-hover v-icon-effect" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/info/pic1.jpg);">
 						<div class="overlay-main bg-black opacity-07"></div>
 						<div class="relative icon-count-1">
 							<span class="icon-count-number">01</span>
@@ -45,7 +45,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 				</div>
 				<div class="col-md-4 col-sm-6">
 
-					<div class="wt-icon-box-wraper p-a30 text-white bg-no-repeat bg-cover overlay-wraper  m-b30 bg-dark-section-hover v-icon-effect" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/info/pic2.jpg);">
+					<div class="wt-icon-box-wraper p-a30 text-white bg-no-repeat bg-cover overlay-wraper m-b30 bg-dark-section-hover v-icon-effect" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/info/pic2.jpg);">
 						<div class="overlay-main bg-black opacity-07"></div>
 						<div class="relative icon-count-1">
 							<span class="icon-count-number">02</span>
@@ -63,7 +63,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 				</div>
 				<div class="col-md-4 col-sm-12">
 
-					<div class="wt-icon-box-wraper p-a30 text-white bg-no-repeat bg-cover overlay-wraper  m-b30 bg-dark-section-hover v-icon-effect" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/info/pic3.jpg);">
+					<div class="wt-icon-box-wraper p-a30 text-white bg-no-repeat bg-cover overlay-wraper m-b30 bg-dark-section-hover v-icon-effect" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/info/pic3.jpg);">
 						<div class="overlay-main bg-black opacity-07"></div>
 						<div class="relative icon-count-1">
 							<span class="icon-count-number">03</span>

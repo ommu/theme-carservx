@@ -14,7 +14,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 
 <div class="section-full small-device p-b80">
 	<div class="section-content">
-		<div class="services-half-section-top  bg-secondry bg-cover bg-center bg-no-repeat" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/background/bg-map.png)">
+		<div class="services-half-section-top bg-secondry bg-cover bg-center bg-no-repeat" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/background/bg-map.png)">
 			<div class="container">
 				<?php //begin.title ?>
 				<div class="section-head text-center text-white">
@@ -37,7 +37,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 						<div class="wt-info p-a30 bg-gray">
 							<h4 class="wt-title m-t0"><a href="javascript:void(0);">Tires and Wheels</a></h4>
 							<p>There are many variations of passag es of Lorem Ipsum available, but the majority have suffered.</p>
-							<a href="javascript:void(0);" class="site-button  site-btn-effect">Read More</a>
+							<a href="javascript:void(0);" class="site-button site-btn-effect">Read More</a>
 						</div>
 
 					</div>
@@ -52,7 +52,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 						<div class="wt-info p-a30 bg-gray">
 							<h4 class="wt-title m-t0"><a href="javascript:void(0);">Technical Repairs</a></h4>
 							<p>There are many variations of passag es of Lorem Ipsum available, but the majority have suffered.</p>
-							<a href="javascript:void(0);" class="site-button  site-btn-effect">Read More</a>
+							<a href="javascript:void(0);" class="site-button site-btn-effect">Read More</a>
 						</div>
 
 					</div>
@@ -67,7 +67,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 						<div class="wt-info p-a30 bg-gray">
 							<h4 class="wt-title m-t0"><a href="javascript:void(0);">Electrical Works</a></h4>
 							<p>There are many variations of passag es of Lorem Ipsum available, but the majority have suffered.</p>
-							<a href="javascript:void(0);" class="site-button  site-btn-effect">Read More</a>
+							<a href="javascript:void(0);" class="site-button site-btn-effect">Read More</a>
 						</div>
 
 					</div>
@@ -82,7 +82,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 						<div class="wt-info p-a30 bg-gray">
 							<h4 class="wt-title m-t0"><a href="javascript:void(0);">Tires and Wheels</a></h4>
 							<p>There are many variations of passag es of Lorem Ipsum available, but the majority have suffered.</p>
-							<a href="javascript:void(0);" class="site-button  site-btn-effect">Read More</a>
+							<a href="javascript:void(0);" class="site-button site-btn-effect">Read More</a>
 						</div>
 
 					</div>
@@ -97,7 +97,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 						<div class="wt-info p-a30 bg-gray">
 							<h4 class="wt-title m-t0"><a href="javascript:void(0);">Technical Repairs</a></h4>
 							<p>There are many variations of passag es of Lorem Ipsum available, but the majority have suffered.</p>
-							<a href="javascript:void(0);" class="site-button  site-btn-effect">Read More</a>
+							<a href="javascript:void(0);" class="site-button site-btn-effect">Read More</a>
 						</div>
 
 					</div>
@@ -112,7 +112,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 						<div class="wt-info p-a30 bg-gray">
 							<h4 class="wt-title m-t0"><a href="javascript:void(0);">Electrical Works</a></h4>
 							<p>There are many variations of passag es of Lorem Ipsum available, but the majority have suffered.</p>
-							<a href="javascript:void(0);" class="site-button  site-btn-effect">Read More</a>
+							<a href="javascript:void(0);" class="site-button site-btn-effect">Read More</a>
 						</div>
 
 					</div>

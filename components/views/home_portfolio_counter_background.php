@@ -13,7 +13,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 $context = $this->context;
 ?>
 
-<div class="section-full  two-part-bg">
+<div class="section-full two-part-bg">
 	<div class="section-content">
 		<div class="container">
 			<div class="mid-counter">

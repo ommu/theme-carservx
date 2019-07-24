@@ -30,7 +30,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 			<div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-xs-100pc bgcall-block">
 				<div class="bg-content-mid-outer">
 					<div class="bg-content-mid">
-						<div class="wt-icon-box-wraper center   text-white">
+						<div class="wt-icon-box-wraper center text-white">
 							<div class="icon-lg m-b15">
 								<span class="icon-cell"><i class="flaticon-plunger"></i></span>
 							</div>
@@ -48,7 +48,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 			<div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-xs-100pc bgcall-block">
 				<div class="bg-content-mid-outer">
 					<div class="bg-content-mid">
-						<div class="wt-icon-box-wraper center   text-white">
+						<div class="wt-icon-box-wraper center text-white">
 							<div class="icon-lg m-b15">
 								<span class="icon-cell"><i class="flaticon-brake-disc"></i></span>
 							</div>
@@ -66,7 +66,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 			<div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-xs-100pc bgcall-block">
 				<div class="bg-content-mid-outer">
 					<div class="bg-content-mid">
-						<div class="wt-icon-box-wraper center   text-white">
+						<div class="wt-icon-box-wraper center text-white">
 							<div class="icon-lg m-b15">
 								<span class="icon-cell"><i class="flaticon-wheel"></i></span>
 							</div>
@@ -84,7 +84,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 			<div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-xs-100pc bgcall-block">
 				<div class="bg-content-mid-outer">
 					<div class="bg-content-mid">
-						<div class="wt-icon-box-wraper  center  text-white">
+						<div class="wt-icon-box-wraper center text-white">
 							<div class="icon-lg m-b15">
 								<span class="icon-cell"><i class="flaticon-automobile"></i></span>
 							</div>
@@ -102,7 +102,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 			<div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-xs-100pc bgcall-block">
 				<div class="bg-content-mid-outer">
 					<div class="bg-content-mid">
-						<div class="wt-icon-box-wraper center   text-white">
+						<div class="wt-icon-box-wraper center text-white">
 							<div class="icon-lg m-b15">
 								<span class="icon-cell"><i class="flaticon-battery"></i></span>
 							</div>
@@ -120,7 +120,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 			<div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-xs-100pc bgcall-block">
 				<div class="bg-content-mid-outer">
 					<div class="bg-content-mid">
-						<div class="wt-icon-box-wraper  center   text-white">
+						<div class="wt-icon-box-wraper center text-white">
 							<div class="icon-lg m-b15">
 								<span class="icon-cell"><i class="flaticon-spray"></i></span>
 							</div>

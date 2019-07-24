@@ -38,7 +38,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-2.js', ['depends' =
 				</div>
 
 				<!-- LAYER NR. 3 [ Black Box ] -->
-				<div class="tp-caption   tp-resizeme" id="slide-901-layer-3" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['250','250','250','250']" data-fontsize="['22','22','22','22']" data-lineheight="['22','22','22','22']" data-width="['700','700','96%','96%']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+				<div class="tp-caption tp-resizeme" id="slide-901-layer-3" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['250','250','250','250']" data-fontsize="['22','22','22','22']" data-lineheight="['22','22','22','22']" data-width="['700','700','96%','96%']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
 				]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; 
@@ -50,7 +50,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-2.js', ['depends' =
 				</div>
 
 				<!-- LAYER NR. 4 [ for title ] -->
-				<div class="tp-caption   tp-resizeme" id="slide-901-layer-4" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['310','310','310','310']" data-fontsize="['72','72','38','28']" data-lineheight="['86','86','48','38']" data-width="['600','600','85%','85%']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+				<div class="tp-caption tp-resizeme" id="slide-901-layer-4" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['310','310','310','310']" data-fontsize="['72','72','38','28']" data-lineheight="['86','86','48','38']" data-width="['600','600','85%','85%']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":1000,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
 				]' data-textAlign="['left','left','left','left']" data-paddingtop="[5,5,5,5]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; 
@@ -65,7 +65,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-2.js', ['depends' =
 				</div>
 
 				<!-- LAYER NR. 5 [ for paragraph] -->
-				<div class="tp-caption  tp-resizeme" id="slide-901-layer-5" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['410','410','380','380']" data-fontsize="['18','18','18','14']" data-lineheight="['30','30','30','22']" data-width="['600','600','600','400']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+				<div class="tp-caption tp-resizeme" id="slide-901-layer-5" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['410','410','380','380']" data-fontsize="['18','18','18','14']" data-lineheight="['30','30','30','22']" data-width="['600','600','600','400']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
 				]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; 
@@ -96,7 +96,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-2.js', ['depends' =
 				</div>
 
 				<!-- LAYER NR. 3 [ Black Box ] -->
-				<div class="tp-caption   tp-resizeme" id="slide-902-layer-3" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['250','250','250','250']" data-fontsize="['22','22','22','22']" data-lineheight="['22','22','22','22']" data-width="['700','700','96%','96%']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+				<div class="tp-caption tp-resizeme" id="slide-902-layer-3" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['250','250','250','250']" data-fontsize="['22','22','22','22']" data-lineheight="['22','22','22','22']" data-width="['700','700','96%','96%']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
 				]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; 
@@ -108,7 +108,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-2.js', ['depends' =
 				</div>
 
 				<!-- LAYER NR. 4 [ for title ] -->
-				<div class="tp-caption   tp-resizeme" id="slide-902-layer-4" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['310','310','310','310']" data-fontsize="['72','72','38','28']" data-lineheight="['86','86','48','38']" data-width="['600','600','85%','85%']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+				<div class="tp-caption tp-resizeme" id="slide-902-layer-4" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['310','310','310','310']" data-fontsize="['72','72','38','28']" data-lineheight="['86','86','48','38']" data-width="['600','600','85%','85%']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":1000,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
 				]' data-textAlign="['left','left','left','left']" data-paddingtop="[5,5,5,5]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; 
@@ -123,7 +123,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-2.js', ['depends' =
 				</div>
 
 				<!-- LAYER NR. 5 [ for paragraph] -->
-				<div class="tp-caption  tp-resizeme" id="slide-902-layer-5" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['410','410','380','380']" data-fontsize="['18','18','18','14']" data-lineheight="['30','30','30','22']" data-width="['600','600','600','400']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+				<div class="tp-caption tp-resizeme" id="slide-902-layer-5" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['410','410','380','380']" data-fontsize="['18','18','18','14']" data-lineheight="['30','30','30','22']" data-width="['600','600','600','400']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
 				]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; 
@@ -158,7 +158,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-2.js', ['depends' =
 				<div class="row">
 					<div class="col-md-3 col-sm-6 col-xs-12">
 						<div class="wt-box m-b30">
-							<div class="wt-media  hover-box-style-1">
+							<div class="wt-media hover-box-style-1">
 								<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/gallery/portrait-half/pic1.jpg" alt="">
 								<div class="hover-box-content">
 									<div class="wt-icon-box-wraper p-a20 center bg-primary">
@@ -178,7 +178,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-2.js', ['depends' =
 					</div>
 					<div class="col-md-3 col-sm-6 col-xs-12">
 						<div class="wt-box m-b30">
-							<div class="wt-media  hover-box-style-1">
+							<div class="wt-media hover-box-style-1">
 								<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/gallery/portrait-half/pic2.jpg" alt="">
 								<div class="hover-box-content">
 									<div class="wt-icon-box-wraper p-a20 center bg-primary">
@@ -198,7 +198,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-2.js', ['depends' =
 					</div>
 					<div class="col-md-3 col-sm-6 col-xs-12">
 						<div class="wt-box m-b30">
-							<div class="wt-media  hover-box-style-1">
+							<div class="wt-media hover-box-style-1">
 								<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/gallery/portrait-half/pic3.jpg" alt="">
 								<div class="hover-box-content">
 									<div class="wt-icon-box-wraper p-a20 center bg-primary">
@@ -218,7 +218,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-2.js', ['depends' =
 					</div>
 					<div class="col-md-3 col-sm-6 col-xs-12">
 						<div class="wt-box m-b30">
-							<div class="wt-media  hover-box-style-1">
+							<div class="wt-media hover-box-style-1">
 								<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/gallery/portrait-half/pic4.jpg" alt="">
 								<div class="hover-box-content">
 									<div class="wt-icon-box-wraper p-a20 center bg-primary">
@@ -263,7 +263,7 @@ echo \themes\carservx\components\HomePortfolioCounter::widget([
 echo \themes\carservx\components\HomeContact::widget(); ?>
 
 <!-- WHY CHOOSE SECTION START -->
-<div class="section-full  p-t80 p-b80 overlay-wraper bg-cover" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/background/bg-2.jpg)">
+<div class="section-full p-t80 p-b80 overlay-wraper bg-cover" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/background/bg-2.jpg)">
 	<div class="overlay-main bg-gray opacity-09"></div>
 	<div class="container">
 		<!-- TITLE START -->
@@ -295,7 +295,7 @@ echo \themes\carservx\components\HomeContact::widget(); ?>
 									<span class="icon-cell text-primary"><i class="flaticon-secure-shield"></i></span>
 								</div>
 								<div class="icon-content">
-									<h4 class="wt-tilte  m-b0">Who We Are</h4>
+									<h4 class="wt-tilte m-b0">Who We Are</h4>
 								</div>
 							</div>
 						</a>
@@ -331,7 +331,7 @@ echo \themes\carservx\components\HomeContact::widget(); ?>
 									<span class="icon-cell text-primary"><i class="flaticon-worker"></i></span>
 								</div>
 								<div class="icon-content">
-									<h4 class="wt-tilte  m-b0">Best Services</h4>
+									<h4 class="wt-tilte m-b0">Best Services</h4>
 								</div>
 							</div>
 						</a>
@@ -358,7 +358,7 @@ echo \themes\carservx\components\HomeContact::widget(); ?>
 									<div class="wt-box m-b30">
 										<h4 class="wt-tilte">Long Term Warranties And Competitive Prices we repair anything from hardware.</h4>
 										<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
-										<ul class="list-angle-right  m-b0">
+										<ul class="list-angle-right m-b0">
 											<li>Our Technicians are highly qualified</li>
 											<li>We supply the after market</li>
 											<li>We only use new parts</li>
@@ -384,7 +384,7 @@ echo \themes\carservx\components\HomeContact::widget(); ?>
 									<div class="wt-box m-b30">
 										<h4 class="wt-tilte">Term Warranties And Competitive Prices we repair anything from hardware.</h4>
 										<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
-										<ul class="list-angle-right  m-b0">
+										<ul class="list-angle-right m-b0">
 											<li>Our Technicians are highly qualified</li>
 											<li>We supply the after market</li>
 											<li>We only use new parts</li>
@@ -410,7 +410,7 @@ echo \themes\carservx\components\HomeContact::widget(); ?>
 									<div class="wt-box m-b30">
 										<h4 class="wt-tilte">Term Warranties And Competitive Prices we repair anything from hardware.</h4>
 										<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
-										<ul class="list-angle-right  m-b0">
+										<ul class="list-angle-right m-b0">
 											<li>Our Technicians are highly qualified</li>
 											<li>We supply the after market</li>
 											<li>We only use new parts</li>
@@ -470,7 +470,7 @@ echo \themes\carservx\components\HomeTeam::widget([
 		</div>
 	</div>
 </div>
-<!-- OFFER SECTION  END -->
+<!-- OFFER SECTION END -->
 
 <?php //begin.latest news (blog)
 echo \themes\carservx\components\HomeLatestNews::widget([

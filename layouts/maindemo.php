@@ -82,7 +82,7 @@ $this->beginPage();?>
 								<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/features/clean-design.png" alt="">
 							</div>
 							<div class="icon-content bg-white">
-								<h5 class="wt-tilte text-uppercase text-black">Clean & Modern Design  </h5>
+								<h5 class="wt-tilte text-uppercase text-black">Clean & Modern Design </h5>
 								<p>Templates is available with our package & in nice design.</p>
 							</div>
 						</div>
@@ -118,7 +118,7 @@ $this->beginPage();?>
 								<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/features/blog.png" alt="">
 							</div>
 							<div class="icon-content bg-white">
-								<h5 class="wt-tilte text-uppercase text-black">Blog layout options  </h5>
+								<h5 class="wt-tilte text-uppercase text-black">Blog layout options </h5>
 								<p>Modern and unique blog layouts including classic and masonary.</p>
 							</div>
 						</div>
@@ -161,7 +161,7 @@ $this->beginPage();?>
 					</div>
 
 					<div class="col-lg-4 col-md-6 col-sm-12 m-b30">
-						<div class="wt-icon-box-wraper bx-style-1 p-a20 center  equal-col bg-white">
+						<div class="wt-icon-box-wraper bx-style-1 p-a20 center equal-col bg-white">
 							<div class="icon-md m-b15">
 								<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/features/revolution.png" alt="">
 							</div>

@@ -11,8 +11,9 @@ class HomeTeam extends \yii\base\Widget
 
 		if($this->withTestimony)
 			$render = 'home_team_with_testimony';
-		else
+		else {
 			$render = 'home_team';
+		}
 
 		return $this->render($render);
 	}

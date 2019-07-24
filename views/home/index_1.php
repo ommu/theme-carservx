@@ -38,7 +38,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-1.js', ['depends' =
 				</div>
 
 				<!-- LAYER NR. 4 [ for title ] -->
-				<div class="tp-caption   tp-resizeme" id="slide-901-layer-4" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['220','220','220','220']" data-fontsize="['72','72','38','28']" data-lineheight="['86','86','48','38']" data-width="['800','800','85%','90%']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+				<div class="tp-caption tp-resizeme" id="slide-901-layer-4" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['220','220','220','220']" data-fontsize="['72','72','38','28']" data-lineheight="['86','86','48','38']" data-width="['800','800','85%','90%']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":1000,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
 				]' data-textAlign="['left','left','left','left']" data-paddingtop="[5,5,5,5]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; 
@@ -53,7 +53,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-1.js', ['depends' =
 				</div>
 
 				<!-- LAYER NR. 5 [ for paragraph] -->
-				<div class="tp-caption  tp-resizeme" id="slide-901-layer-5" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['500','500','420','420']" data-fontsize="['18','18','18','14']" data-lineheight="['30','30','30','22']" data-width="['700','700','600','400']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+				<div class="tp-caption tp-resizeme" id="slide-901-layer-5" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['500','500','420','420']" data-fontsize="['18','18','18','14']" data-lineheight="['30','30','30','22']" data-width="['700','700','600','400']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
 				]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[60,60,60,60]" style="z-index: 13; 
@@ -84,7 +84,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-1.js', ['depends' =
 				</div>
 
 				<!-- LAYER NR. 4 [ for title ] -->
-				<div class="tp-caption   tp-resizeme" id="slide-902-layer-4" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['220','220','220','220']" data-fontsize="['72','72','38','28']" data-lineheight="['86','86','48','38']" data-width="['800','800','85%','90%']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+				<div class="tp-caption tp-resizeme" id="slide-902-layer-4" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['220','220','220','220']" data-fontsize="['72','72','38','28']" data-lineheight="['86','86','48','38']" data-width="['800','800','85%','90%']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":1000,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
 				]' data-textAlign="['left','left','left','left']" data-paddingtop="[5,5,5,5]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; 
@@ -99,7 +99,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-1.js', ['depends' =
 				</div>
 
 				<!-- LAYER NR. 5 [ for paragraph] -->
-				<div class="tp-caption  tp-resizeme" id="slide-902-layer-5" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['500','500','420','420']" data-fontsize="['18','18','18','14']" data-lineheight="['30','30','30','22']" data-width="['700','700','600','400']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+				<div class="tp-caption tp-resizeme" id="slide-902-layer-5" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['500','500','420','420']" data-fontsize="['18','18','18','14']" data-lineheight="['30','30','30','22']" data-width="['700','700','600','400']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
 				]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[60,60,60,60]" style="z-index: 13; 
@@ -130,7 +130,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-1.js', ['depends' =
 				</div>
 
 				<!-- LAYER NR. 4 [ for title ] -->
-				<div class="tp-caption   tp-resizeme" id="slide-903-layer-4" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['220','220','220','220']" data-fontsize="['72','72','38','28']" data-lineheight="['86','86','48','38']" data-width="['800','800','85%','90%']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+				<div class="tp-caption tp-resizeme" id="slide-903-layer-4" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['220','220','220','220']" data-fontsize="['72','72','38','28']" data-lineheight="['86','86','48','38']" data-width="['800','800','85%','90%']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":1000,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
 				]' data-textAlign="['left','left','left','left']" data-paddingtop="[5,5,5,5]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; 
@@ -145,7 +145,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-1.js', ['depends' =
 				</div>
 
 				<!-- LAYER NR. 5 [ for paragraph] -->
-				<div class="tp-caption  tp-resizeme" id="slide-903-layer-5" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['500','500','420','420']" data-fontsize="['18','18','18','14']" data-lineheight="['30','30','30','22']" data-width="['700','700','600','400']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+				<div class="tp-caption tp-resizeme" id="slide-903-layer-5" data-x="['left','left','left','left']" data-hoffset="['50','50','30','30']" data-y="['top','top','top','top']" data-voffset="['500','500','420','420']" data-fontsize="['18','18','18','14']" data-lineheight="['30','30','30','22']" data-width="['700','700','600','400']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
 				]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[60,60,60,60]" style="z-index: 13; 
@@ -196,7 +196,7 @@ echo \themes\carservx\components\HomeOurService::widget([
 				</div>
 				<!-- TITLE END -->
 				<div class="section-content">
-					<ol class="list-num-count  m-b0">
+					<ol class="list-num-count m-b0">
 						<li>To facilitate even energy distribution so your vehicle's battery is properly charged.</li>
 						<li>Avoid breaking down in your vehicle by maintaining its belts and hoses.</li>
 						<li>Failing an emissions test is usually the fault of either the muffler or the exhaust system.</li>
@@ -208,7 +208,7 @@ echo \themes\carservx\components\HomeOurService::widget([
 			</div>
 		</div>
 
-		<div class="col-lg-6 col-md-6 why-choose-right-section  bg-primary">
+		<div class="col-lg-6 col-md-6 why-choose-right-section bg-primary">
 			<div class="why-choose-right-content">
 				<div class="why-choose-video-outer overlay-wraper bg-cover" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/video-pic.png)">
 					<div class="overlay-main bg-black opacity-05"></div>

@@ -38,7 +38,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-3.js', ['depends' =
 				</div>
 
 				<!-- LAYER NR. 3 [ Black Box ] -->
-				<div class="tp-caption   tp-resizeme" id="slide-901-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['170','170','270','270']" data-fontsize="['22','22','30','50']" data-lineheight="['22','22','30','50']" data-width="['700','700','96%','96%']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+				<div class="tp-caption tp-resizeme" id="slide-901-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['170','170','270','270']" data-fontsize="['22','22','30','50']" data-lineheight="['22','22','30','50']" data-width="['700','700','96%','96%']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
 				]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; 
@@ -50,7 +50,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-3.js', ['depends' =
 				</div>
 
 				<!-- LAYER NR. 4 [ for title ] -->
-				<div class="tp-caption   tp-resizeme" id="slide-901-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['230','230','350','380']" data-fontsize="['72','72','60','72']" data-lineheight="['86','86','66','66']" data-width="['600','600','600','600']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+				<div class="tp-caption tp-resizeme" id="slide-901-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['230','230','350','380']" data-fontsize="['72','72','60','72']" data-lineheight="['86','86','66','66']" data-width="['600','600','600','600']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":1000,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
 				]' data-textAlign="['center','center','center','center']" data-paddingtop="[5,5,5,5]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; 
@@ -64,7 +64,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-3.js', ['depends' =
 
 				</div>
 
-				<!-- LAYER NR. 7 [ for  pic ] -->
+				<!-- LAYER NR. 7 [ for pic ] -->
 				<div class="tp-caption tp-resizeme" id="slide-901-layer-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-50','-50','-50','-50']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[ 
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
@@ -72,7 +72,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-3.js', ['depends' =
 					<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/main-slider/slider3/slide1-1.png" alt="" width="534" height="437" data-no-retina>
 				</div>
 
-				<!-- LAYER NR. 8 [ for  pic ] -->
+				<!-- LAYER NR. 8 [ for pic ] -->
 				<div class="tp-caption tp-resizeme" id="slide-901-layer-6" data-x="['center','center','center','center']" data-hoffset="['20','20','20','20']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" data-width="['100%','100%','100%','100%']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="image" data-responsive_offset="on" data-frames='[ 
 				{"from":"x:200px(R);opacity:0;","speed":2000,"to":"o:1;","delay":3000,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
@@ -96,7 +96,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-3.js', ['depends' =
 				</div>
 
 				<!-- LAYER NR. 3 [ Black Box ] -->
-				<div class="tp-caption   tp-resizeme" id="slide-902-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['170','170','270','270']" data-fontsize="['22','22','30','50']" data-lineheight="['22','22','30','50']" data-width="['700','700','600','600']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+				<div class="tp-caption tp-resizeme" id="slide-902-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['170','170','270','270']" data-fontsize="['22','22','30','50']" data-lineheight="['22','22','30','50']" data-width="['700','700','600','600']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
 				]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; 
@@ -108,7 +108,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-3.js', ['depends' =
 				</div>
 
 				<!-- LAYER NR. 4 [ for title ] -->
-				<div class="tp-caption   tp-resizeme" id="slide-902-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['230','230','350','380']" data-fontsize="['72','72','60','72']" data-lineheight="['86','86','66','66']" data-width="['600','600','600','600']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+				<div class="tp-caption tp-resizeme" id="slide-902-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['230','230','350','380']" data-fontsize="['72','72','60','72']" data-lineheight="['86','86','66','66']" data-width="['600','600','600','600']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":1000,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
 				]' data-textAlign="['center','center','center','center']" data-paddingtop="[5,5,5,5]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; 
@@ -122,7 +122,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-3.js', ['depends' =
 
 				</div>
 
-				<!-- LAYER NR. 5 [ for  pic ] -->
+				<!-- LAYER NR. 5 [ for pic ] -->
 				<div class="tp-caption tp-resizeme" id="slide-902-layer-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-100','-100','0','0']" data-frames='[ 
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
@@ -130,7 +130,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-3.js', ['depends' =
 					<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/main-slider/slider3/slide2-1.png" alt="">
 				</div>
 
-				<!-- LAYER NR. 8 [ for  pic ] -->
+				<!-- LAYER NR. 8 [ for pic ] -->
 				<div class="tp-caption tp-resizeme" id="slide-902-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" data-frames='[ 
 				{"from":"x:200px(R);opacity:0;","speed":2000,"to":"o:1;","delay":3000,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
@@ -153,7 +153,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-3.js', ['depends' =
 				</div>
 
 				<!-- LAYER NR. 3 [ Black Box ] -->
-				<div class="tp-caption   tp-resizeme" id="slide-903-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['170','170','270','270']" data-fontsize="['22','22','30','50']" data-lineheight="['22','22','30','50']" data-width="['700','700','600','600']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+				<div class="tp-caption tp-resizeme" id="slide-903-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['170','170','270','270']" data-fontsize="['22','22','30','50']" data-lineheight="['22','22','30','50']" data-width="['700','700','600','600']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
 				]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; 
@@ -165,7 +165,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-3.js', ['depends' =
 				</div>
 
 				<!-- LAYER NR. 4 [ for title ] -->
-				<div class="tp-caption   tp-resizeme" id="slide-903-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['230','230','350','380']" data-fontsize="['72','72','60','72']" data-lineheight="['86','86','66','66']" data-width="['600','600','600','600']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+				<div class="tp-caption tp-resizeme" id="slide-903-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['230','230','350','380']" data-fontsize="['72','72','60','72']" data-lineheight="['86','86','66','66']" data-width="['600','600','600','600']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":1000,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
 				]' data-textAlign="['center','center','center','center']" data-paddingtop="[5,5,5,5]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; 
@@ -179,7 +179,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-3.js', ['depends' =
 
 				</div>
 
-				<!-- LAYER NR. 5 [ for  pic ] -->
+				<!-- LAYER NR. 5 [ for pic ] -->
 				<div class="tp-caption tp-resizeme" id="slide-903-layer-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','-100','0','0']" data-frames='[ 
 				{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":3000,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
@@ -187,7 +187,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-3.js', ['depends' =
 					<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/main-slider/slider3/slide3-1.png" alt="">
 				</div>
 
-				<!-- LAYER NR. 8 [ for  pic ] -->
+				<!-- LAYER NR. 8 [ for pic ] -->
 				<div class="tp-caption tp-resizeme" id="slide-903-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" data-frames='[ 
 				{"from":"x:200px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
 				{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
@@ -263,7 +263,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-3.js', ['depends' =
 <!-- ABOUT COMPANY END -->
 
 <!-- WHY CHOOSE SECTION START -->
-<div class="section-full small-device  p-t80 p-b80 bg-gray">
+<div class="section-full small-device p-t80 p-b80 bg-gray">
 	<div class="container">
 		<!-- TITLE START -->
 		<div class="section-head text-center">
@@ -294,7 +294,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-3.js', ['depends' =
 									<span class="icon-cell text-primary"><i class="flaticon-secure-shield"></i></span>
 								</div>
 								<div class="icon-content">
-									<h5 class="wt-tilte  m-b0">Who We Are</h5>
+									<h5 class="wt-tilte m-b0">Who We Are</h5>
 								</div>
 							</div>
 						</a>
@@ -321,7 +321,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-3.js', ['depends' =
 									<div class="wt-box m-b30">
 										<h4 class="wt-tilte wt-tilte m-t0">Long Term Warranties And Competitive Prices we repair anything from hardware.</h4>
 										<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
-										<ul class="list-angle-right  m-b0">
+										<ul class="list-angle-right m-b0">
 											<li>Our Technicians are highly qualified</li>
 											<li>There are many variations</li>
 											<li>We supply the after market</li>
@@ -348,7 +348,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-3.js', ['depends' =
 									<div class="wt-box m-b30">
 										<h4 class="wt-tilte m-t0">Term Warranties And Competitive Prices we repair anything from hardware.</h4>
 										<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
-										<ul class="list-angle-right  m-b0">
+										<ul class="list-angle-right m-b0">
 											<li>There are many variations</li>
 											<li>Our Technicians are highly qualified</li>
 											<li>We supply the after market</li>
@@ -375,7 +375,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-3.js', ['depends' =
 									<div class="wt-box m-b30">
 										<h4 class="wt-tilte wt-tilte m-t0">Long Warranties And Competitive Prices we repair anything from hardware.</h4>
 										<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
-										<ul class="list-angle-right  m-b0">
+										<ul class="list-angle-right m-b0">
 											<li>Our Technicians are highly qualified</li>
 											<li>We supply the after market</li>
 											<li>We only use new parts</li>
@@ -455,7 +455,7 @@ echo \themes\carservx\components\HomeLatestNews::widget([
 		</div>
 	</div>
 </div>
-<!-- OFFER SECTION  END -->
+<!-- OFFER SECTION END -->
 
 <?php //begin.client with logo
 echo \themes\carservx\components\HomeClient::widget([
