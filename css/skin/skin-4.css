@@ -44,7 +44,7 @@
 .pagination > li > span:focus,
 .contact-one .form-control:focus + .spin,
 .cssload-box-loading::after,
-.is-fixed .header-center .navbar-toggle .icon-bar,
+.stuck .header-center .navbar-toggle .icon-bar,
 .wt-post-readmore a::after,
 .owl-carousel .owl-dots .owl-dot span,
 .owl-carousel .owl-dots .owl-dot.active span,

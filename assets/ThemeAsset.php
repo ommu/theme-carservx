@@ -9,7 +9,6 @@ class ThemeAsset extends \yii\web\AssetBundle
 		"css/loader.min.css",
 		"css/style.css",
 		"css/flaticon.min.css",
-		"css/skin/skin-1.css",
 	];
 
 	public $depends = [

@@ -2775,10 +2775,10 @@ ol.list-num-count.list-outline-none > li:before {background-color:transparent;	c
 	padding-left:0px;
 	padding-right:0px;
 }
-.owl-carousel.testimonial-home-2 .owl-dots .owl-dot.active{
+.owl-carousel.testimonial-home-with-team .owl-dots .owl-dot.active{
 	border:2px solid #fff;
 }
-.owl-carousel.testimonial-home-2 .owl-dots .owl-dot.active span {
+.owl-carousel.testimonial-home-with-team .owl-dots .owl-dot.active span {
     background: #fff !important;
 }
 
@@ -4436,7 +4436,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 /*-------------------------------------
 	2. when header is sticky 
 -------------------------------------*/  
-/*.is-fixed .logo-header {	height:70px;	}*/
+/*.stuck .logo-header {	height:70px;	}*/
 
 /*======================================
 17. MAIN BAR ( place logo & main-navigation )
@@ -4700,7 +4700,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 @media only screen and (max-width:480px) {
 .navbar-toggle { 	margin-left:10px;}	
 }
-.is-fixed .navbar-toggle { 	margin-top:14px;	margin-bottom:14px;}
+.stuck .navbar-toggle { 	margin-top:14px;	margin-bottom:14px;}
 .header-nav {	position:relative;	padding:0px; z-index:10;}
 .header-nav .nav {float:right;}
 .header-nav .nav i {font-size:9px; 	margin-left:3px;	margin-top:-3px;	vertical-align:middle;	opacity:0.7;}
@@ -4957,19 +4957,19 @@ header .logo{	display:block;	padding:4px 0;}
 
 
 @media only screen and (max-width: 991px) {
-.is-fixed .header-nav .nav{
+.stuck .header-nav .nav{
 	overflow:auto;
 	height:275px;
 }	
-.is-fixed .header-nav .nav > li > a {
+.stuck .header-nav .nav > li > a {
 	padding:12px 15px;
 }
-.is-fixed#header-part .navbar-toggle{
+.stuck#header-part .navbar-toggle{
 	margin:15px 0;
 }
 }
 @media only screen and (max-width:768px) {
-.is-fixed .extra-nav {
+.stuck .extra-nav {
     padding: 13px 7px;
 }
 }
@@ -5169,8 +5169,8 @@ header .logo{	display:block;	padding:4px 0;}
 	position:absolute;
 	background:none; 
 } 
-.is-fixed .main-bar {position:fixed;	top:0;	left:0;}
-.header-style-1 .is-fixed.color-fill .main-bar {
+.stuck .main-bar {position:fixed;	top:0;	left:0;}
+.header-style-1 .stuck.color-fill .main-bar {
     background: #232e35;
 }
 
@@ -5182,14 +5182,14 @@ header .logo{	display:block;	padding:4px 0;}
 /*-------------------------------------
  5. header id Fixed
 -------------------------------------*/  
-/*.is-fixed.color-fill .main-bar {    padding:0px 64px;}*/
-.is-fixed.color-fill .header-nav .nav > li { margin:0; padding:0;}
-.is-fixed.color-fill .header-nav .nav > li > a { margin:0; padding:25px 12px;}
+/*.stuck.color-fill .main-bar {    padding:0px 64px;}*/
+.stuck.color-fill .header-nav .nav > li { margin:0; padding:0;}
+.stuck.color-fill .header-nav .nav > li > a { margin:0; padding:25px 12px;}
 
 @media only screen and (max-width:767px){
 .main-bar,
-.is-fixed .main-bar,
-.is-fixed.color-fill .main-bar {  padding: 0px;}
+.stuck .main-bar,
+.stuck.color-fill .main-bar {  padding: 0px;}
 }
 
 
@@ -5220,8 +5220,8 @@ header .logo{	display:block;	padding:4px 0;}
 
 .header-nav .nav > li { margin:0; padding:0;}
 .header-nav .nav > li > a { margin:0; padding:10px 12px;}
-.is-fixed.color-fill .header-nav .nav > li { margin:0; padding:0;}
-.is-fixed.color-fill .header-nav .nav > li > a { margin:0; padding:10px 12px;}
+.stuck.color-fill .header-nav .nav > li { margin:0; padding:0;}
+.stuck.color-fill .header-nav .nav > li > a { margin:0; padding:10px 12px;}
 
 .header-style-1 .header-nav .nav > li > a {
     color: #232e35;
@@ -7552,7 +7552,7 @@ transition: all 0.2s ease;
 }
 }
 @media only screen and (max-width:540px){
-.is-fixed .navbar-toggle{
+.stuck .navbar-toggle{
 	margin-bottom:0px;
 }
 }

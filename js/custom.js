@@ -120,8 +120,8 @@ All JavaScript fuctions Start
 		});
 	}
 
-// > Main menu sticky on top  when scroll down function by = custom.js ========== //		
-	function sticky_header(){
+	// Main menu sticky on top  when scroll down function by = custom.js ========== //		
+	function sticky_header() {
 		if(jQuery('.sticky-header').length){
 			var sticky = new Waypoint.Sticky({
 			  element: jQuery('.sticky-header')
@@ -129,8 +129,8 @@ All JavaScript fuctions Start
 		}
 	}
 
-// > page scroll top on button click function by = custom.js ===================== //	
-	function scroll_top(){
+	// page scroll top on button click function by = custom.js ===================== //	
+	function scroll_top() {
 		jQuery("button.scroltop").on('click', function() {
 			jQuery("html, body").animate({
 				scrollTop: 0
@@ -233,156 +233,154 @@ All JavaScript fuctions Start
 		
 	 }
 
-	
-// Home page testimonial function by = owl.carousel.js ========================== //
-	function testimonial_home(){
-	jQuery('.testimonial-home').owlCarousel({
-		loop:true,
-		autoplay:false,
-		margin:30,
-		nav:false,
-		dots: true,
-		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-		responsive:{
-			0:{
-				items:1
-			},
-			991:{
-				items:1
-			},
-			1024:{
-				items:2
-			}			
-		}
-	});
-	}	
-	
-// Home page testimonial function by = owl.carousel.js ========================== //
-	function testimonial_home_2(){
-	jQuery('.testimonial-home-2').owlCarousel({
-		loop:true,
-		autoplay:true,
-		margin:30,
-		nav:false,
-		dots: true,
-		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-		responsive:{
-			0:{
-				items:1
-			},
-			991:{
-				items:2
-			},
-			1170:{
-				items:1
-			}		
-		}
-	});
+	// Home page testimonial function by = owl.carousel.js ========================== //
+	function testimonial_home() {
+		jQuery('.testimonial-home').owlCarousel({
+			loop: true,
+			autoplay: false,
+			margin: 30,
+			nav: false,
+			dots: true,
+			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+			responsive:{
+				0:{
+					items:1
+				},
+				991:{
+					items:1
+				},
+				1024:{
+					items:2
+				}
+			}
+		});
 	}
-	
-// Home page Team function by = owl.carousel.js ========================== //
-	function team_home_2(){
-	jQuery('.team-home-2').owlCarousel({
-		loop:true,
-		autoplay:true,
-		margin:30,
-		nav:true,
-		dots: false,
-		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-		responsive:{
-			0:{
-				items:1
-			},
-			540:{
-				items:3
-			},			
-			991:{
-				items:4
-			},
-			1170:{
-				items:2
-			}			
-		}
-	});
-	}				
-	
-// Home page Services function by = owl.carousel.js ========================== //
-	function services_home(){
-	jQuery('.services_home').owlCarousel({
-		loop:true,
-		autoplay:false,
-		margin:30,
-		nav:true,
-		dots: false,
-		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-		responsive:{
-			0:{
-				items:1
-			},
-			768:{
-				items:3
-			},		
-			991:{
-				items:3
-			}
-		}
-	});
-	}		
-	
-	
-	
-//  home_client_carouse function by = owl.carousel.js ========================== //
-	function home_client_carousel(){
-	jQuery('.home-client-carousel').owlCarousel({
-		loop:true,
-		margin:10,
-		nav:true,
-		dots: false,
-		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-		responsive:{
-			0:{
-				items:2
-			},
-			480:{
-				items:3
-			},			
-			767:{
-				items:4
-			},
-			1000:{
-				items:5
-			}
-		}
-	});
-	}	
 
-
-//  home_client_carouse function by = owl.carousel.js ========================== //
-	function home_client_carousel_2(){
-	jQuery('.home-client-carousel-2').owlCarousel({
-		loop:true,
-		margin:10,
-		autoplay:false,
-		nav:false,
-		dots: true,
-		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-		responsive:{
-			0:{
-				items:2
-			},
-			480:{
-				items:3
-			},			
-			767:{
-				items:4
-			},
-			1000:{
-				items:6
+	// Home page testimonial function by = owl.carousel.js ========================== //
+	function testimonial_home_with_team() {
+		jQuery('.testimonial-home-with-team').owlCarousel({
+			loop: true,
+			autoplay: true,
+			margin: 30,
+			nav: false,
+			dots: true,
+			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+			responsive:{
+				0:{
+					items:1
+				},
+				991:{
+					items:2
+				},
+				1170:{
+					items:1
+				}
 			}
-		}
-	});
-	}	
-	
+		});
+	}
+
+	// Home page Team function by = owl.carousel.js ========================== //
+	function team_home_with_testimony() {
+		jQuery('.team-home-with-testimony').owlCarousel({
+			loop: true,
+			autoplay: true,
+			margin: 30,
+			nav: true,
+			dots: false,
+			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+			responsive:{
+				0:{
+					items:1
+				},
+				540:{
+					items:3
+				},
+				991:{
+					items:4
+				},
+				1170:{
+					items:2
+				}
+			}
+		});
+	}
+
+	// Home page Services function by = owl.carousel.js ========================== //
+	function services_home() {
+		jQuery('.services_home').owlCarousel({
+			loop: true,
+			autoplay: false,
+			margin: 30,
+			nav: true,
+			navElement: 'div',
+			dots: false,
+			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+			responsive:{
+				0:{
+					items:1
+				},
+				768:{
+					items:3
+				},
+				991:{
+					items:3
+				}
+			}
+		});
+	}
+
+	// home_client_carouse function by = owl.carousel.js ========================== //
+	function home_client_carousel_navigation() {
+		jQuery('.home-client-carousel-navigation').owlCarousel({
+			loop: true,
+			margin: 10,
+			nav: true,
+			navElement: 'div',
+			dots: false,
+			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+			responsive:{
+				0:{
+					items:2
+				},
+				480:{
+					items:3
+				},
+				767:{
+					items:4
+				},
+				1000:{
+					items:5
+				}
+			}
+		});
+	}
+
+	// home_client_carouse function by = owl.carousel.js ========================== //
+	function home_client_carousel() {
+		jQuery('.home-client-carousel').owlCarousel({
+			loop: true,
+			margin: 10,
+			autoplay: false,
+			nav: false,
+			dots: true,
+			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+			responsive:{
+				0:{
+					items:2
+				},
+				480:{
+					items:3
+				},
+				767:{
+					items:4
+				},
+				1000:{
+					items:6
+				}
+			}
+		});
+	}
+
 // > Hover back  function ========================== //
 	
 	function hover_tab(){	
@@ -570,7 +568,7 @@ All JavaScript fuctions Start
 		jQuery(function(){
 				jQuery.stellar({
 					horizontalScrolling: false,
-					verticalOffset:100
+					verticalOffset: 100
 				});
 			});			
 	}	
@@ -584,20 +582,19 @@ All JavaScript fuctions Start
     Window on scroll ALL FUNCTION START
 ---------------------------------------------------------------------------------------------*/
 
-    function color_fill_header() {
-        var scroll = $(window).scrollTop();
-        if(scroll >= 100) {
-            $(".is-fixed").addClass("color-fill");
-        } else {
-            $(".is-fixed").removeClass("color-fill");
-        }
-    };	
+	function color_fill_header() {
+		var scroll = $(window).scrollTop();
+		if(scroll >= 100) {
+			$(".stuck").addClass("color-fill");
+		} else {
+			$(".stuck").removeClass("color-fill");
+		}
+	};
 
 /*--------------------------------------------------------------------------------------------
 	document.ready ALL FUNCTION START
 ---------------------------------------------------------------------------------------------*/
 	jQuery(document).ready(function() {
-		
 		searchCollapse(),
 		socialCollapse(),		
 		//menu navigation
@@ -610,9 +607,9 @@ All JavaScript fuctions Start
 		magnific_video(),
 		// > Vertically center Bootstrap modal popup function by = custom.js
 		popup_vertical_center();
-		// > Main menu sticky on top  when scroll down function by = custom.js		
+		// > Main menu sticky on top  when scroll down function by = custom.js
 		sticky_header(),
-		// > page scroll top on button click function by = custom.js	
+		// > page scroll top on button click function by = custom.js
 		scroll_top(),
 		// > input type file function by = custom.js	 	
 		input_type_file_form(),
@@ -624,23 +621,23 @@ All JavaScript fuctions Start
 		accordion_active(),
 		// > Nav submenu on off function by = custome.js ===================//
 		mobile_nav(),
-        // > Hover back  function ========================== //
-	   hover_tab(),		
+		// > Hover back  function ========================== //
+		hover_tab(),
 		// Home page testimonial function by = owl.carousel.js ========================== //
 		testimonial_home(),
 		// Home page testimonial function by = owl.carousel.js ========================== //
-		testimonial_home_2(),	
+		testimonial_home_with_team(),
 		// Home page Team function by = owl.carousel.js ========================== //
-	    team_home_2(),		
+		team_home_with_testimony(),
 		// Home page Services function by = owl.carousel.js ========================== //
-	    services_home(),
+		services_home(),
+		//  Client logo Carousel function by = owl.carousel.js ========================== //
+		home_client_carousel_navigation(),
 		//  Client logo Carousel function by = owl.carousel.js ========================== //
 		home_client_carousel(),
-		//  Client logo Carousel function by = owl.carousel.js ========================== //
-		home_client_carousel_2(),
 		//  Counter Section function by = counterup.min.js ========================== //
 		counter_section()
-	}); 	
+	});
 
 /*--------------------------------------------------------------------------------------------
 	Window Load START

@@ -4,7 +4,7 @@ namespace themes\carservx\assets;
 class ThemePreviewPluginAsset extends \yii\web\AssetBundle
 {
 	public $sourcePath = '@themes/carservx';
-	
+
 	public $css = [
 		"css/preview/style.css",
 	];
@@ -25,6 +25,7 @@ class ThemePreviewPluginAsset extends \yii\web\AssetBundle
 			'assets/',
 			'components/',
 			'controllers/',
+			'fonts/',
 			'layouts/',
 			'modules/',
 			'site/',

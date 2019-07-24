@@ -6209,7 +6209,7 @@ blockquote:before {
 /*-------------------------------------
 	2. when header is sticky 
 -------------------------------------*/  
-.is-fixed .logo-header {
+.stuck .logo-header {
 	height:70px;	
 }
 
@@ -6230,13 +6230,13 @@ blockquote:before {
     display: table;
 }
 /*main bar with box view*/
-.boxed .is-fixed .main-bar{
+.boxed .stuck .main-bar{
 	max-width:1200px;
 	margin:0 -600px;
 	left:50%;
 }
 @media only screen and (max-width: 1200px) {
-.boxed .is-fixed .main-bar{
+.boxed .stuck .main-bar{
 	margin:0;
 	left:0;
 }
@@ -6357,7 +6357,7 @@ blockquote:before {
 	margin-left:0;
 }
 }
-.is-fixed .navbar-toggle { 
+.stuck .navbar-toggle { 
 	margin-top:14px;
 	margin-bottom:14px;
 }
@@ -6761,34 +6761,34 @@ header .logo{
 /*-------------------------------------
 	4. when header is sticky
 -------------------------------------*/  
-.is-fixed .main-bar {
+.stuck .main-bar {
 	position:fixed;
 	top:0;
 	left:0;
 }
 
-.is-fixed .header-nav .nav > li > a {
+.stuck .header-nav .nav > li > a {
 	padding:25px 12px;
 }
-.is-fixed .extra-nav { 
+.stuck .extra-nav { 
 	padding:15px 0;
 }
 
 @media only screen and (max-width: 991px) {
-.is-fixed .header-nav .nav > li > a {
+.stuck .header-nav .nav > li > a {
 	padding:12px 15px;
 }
 }
 
 @media only screen and (max-width: 991px) {
-.is-fixed .header-nav .nav{
+.stuck .header-nav .nav{
 	overflow:auto;
 	height:275px;
 }	
-.is-fixed .header-nav .nav > li > a {
+.stuck .header-nav .nav > li > a {
 	padding:12px 15px;
 }
-.is-fixed#header-part .navbar-toggle{
+.stuck#header-part .navbar-toggle{
 	margin:15px 0;
 }
 }
@@ -6911,30 +6911,30 @@ header .logo{
 }
 
 /* header 3 fixed */ 
-.header-style-3 .is-fixed .main-bar {
+.header-style-3 .stuck .main-bar {
 	position:fixed;
 	background:#fff;
 }
-.header-style-3 .is-fixed .header-nav .nav > li > a {
+.header-style-3 .stuck .header-nav .nav > li > a {
 	color:#555;
 }
-.header-style-3 .is-fixed .header-nav .nav > li:hover > a {
+.header-style-3 .stuck .header-nav .nav > li:hover > a {
 	color:#FFBC13;	
 }
-.header-style-3 .header-nav .is-fixed  .nav > li.active > a, 
-.header-style-3 .header-nav .is-fixed  .nav > li.current-menu-item > a {
+.header-style-3 .header-nav .stuck  .nav > li.active > a, 
+.header-style-3 .header-nav .stuck  .nav > li.current-menu-item > a {
 	color:#FFBC13;	
 }
-.header-style-3 .is-fixed .navbar-toggle .icon-bar {
+.header-style-3 .stuck .navbar-toggle .icon-bar {
 	background:#555;
 }
-.header-style-3 .is-fixed .site-search-btn,
-.header-style-3 .is-fixed .wt-cart .woo-cart-total,
-.header-style-3 .is-fixed .wt-cart .woo-cart-count {
+.header-style-3 .stuck .site-search-btn,
+.header-style-3 .stuck .wt-cart .woo-cart-total,
+.header-style-3 .stuck .wt-cart .woo-cart-count {
 	color:#555;
 }
-.header-style-3 .is-fixed .wt-cart .woo-cart-count,
-.header-style-3 .is-fixed .wt-cart .woo-cart-count::before {
+.header-style-3 .stuck .wt-cart .woo-cart-count,
+.header-style-3 .stuck .wt-cart .woo-cart-count::before {
 	border-color:#555;
 }
 
@@ -6947,7 +6947,7 @@ header .logo{
 }
 
 /*	header 4 fixed */ 
-.header-style-4 .is-fixed .main-bar {
+.header-style-4 .stuck .main-bar {
 	position:fixed;
 	background:#fff;
 }
@@ -6976,30 +6976,30 @@ header .logo{
 }
 
 /* header 3 fixed */ 
-.header-style-5 .is-fixed .main-bar {
+.header-style-5 .stuck .main-bar {
 	position:fixed;
 	background:#fff;
 }
-.header-style-5 .is-fixed .header-nav .nav > li > a {
+.header-style-5 .stuck .header-nav .nav > li > a {
 	color:#555;
 }
-.header-style-5 .is-fixed .header-nav .nav > li:hover > a {
+.header-style-5 .stuck .header-nav .nav > li:hover > a {
 	color:#FFBC13;	
 }
-.header-style-5 .header-nav .is-fixed  .nav > li.active > a, 
-.header-style-5 .header-nav .is-fixed  .nav > li.current-menu-item > a {
+.header-style-5 .header-nav .stuck  .nav > li.active > a, 
+.header-style-5 .header-nav .stuck  .nav > li.current-menu-item > a {
 	color:#FFBC13;	
 }
-.header-style-5 .is-fixed .navbar-toggle .icon-bar {
+.header-style-5 .stuck .navbar-toggle .icon-bar {
 	background:#555;
 }
-.header-style-5 .is-fixed .site-search-btn,
-.header-style-5 .is-fixed .wt-cart .woo-cart-total,
-.header-style-5 .is-fixed .wt-cart .woo-cart-count {
+.header-style-5 .stuck .site-search-btn,
+.header-style-5 .stuck .wt-cart .woo-cart-total,
+.header-style-5 .stuck .wt-cart .woo-cart-count {
 	color:#555;
 }
-.header-style-5 .is-fixed .wt-cart .woo-cart-count,
-.header-style-5 .is-fixed .wt-cart .woo-cart-count::before {
+.header-style-5 .stuck .wt-cart .woo-cart-count,
+.header-style-5 .stuck .wt-cart .woo-cart-count::before {
 	border-color:#555;
 }
 
@@ -12455,7 +12455,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {	padding:0 15px !im
 /*-------------------------------------
 	2. when header is sticky 
 -------------------------------------*/  
-.is-fixed .logo-header {	height:70px;	}
+.stuck .logo-header {	height:70px;	}
 
 /*======================================
 17. MAIN BAR ( place logo & main-navigation )
@@ -12608,7 +12608,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {	padding:0 15px !im
 .navbar-toggle { 	margin-left:10px;}	
 .extra-nav .extra-cell {margin-left:0;}
 }
-.is-fixed .navbar-toggle { 	margin-top:14px;	margin-bottom:14px;}
+.stuck .navbar-toggle { 	margin-top:14px;	margin-bottom:14px;}
 .header-nav {	position:relative;	padding:0;}
 .header-nav .nav {float:right;}
 .header-nav .nav i {font-size:9px; 	margin-left:3px;	margin-top:-3px;	vertical-align:middle;	opacity:0.7;}
@@ -12988,19 +12988,19 @@ header .logo{	display:block;	padding:4px 0;}
 /*-------------------------------------
 	4. when header is sticky
 -------------------------------------*/  
-.is-fixed .main-bar {position:fixed;	top:0;	left:0;}
+.stuck .main-bar {position:fixed;	top:0;	left:0;}
 
 /*-------------------------------------
  5. header id Fixed
 -------------------------------------*/  
-.is-fixed.color-fill .main-bar {    padding:0px 64px;}
-.is-fixed.color-fill .header-nav .nav > li { margin:0; padding:0;}
-.is-fixed.color-fill .header-nav .nav > li > a { margin:0; padding:25px 12px;}
+.stuck.color-fill .main-bar {    padding:0px 64px;}
+.stuck.color-fill .header-nav .nav > li { margin:0; padding:0;}
+.stuck.color-fill .header-nav .nav > li > a { margin:0; padding:25px 12px;}
 
 @media only screen and (max-width:767px){
 .main-bar,
-.is-fixed .main-bar,
-.is-fixed.color-fill .main-bar {  padding: 0px;}
+.stuck .main-bar,
+.stuck.color-fill .main-bar {  padding: 0px;}
 }
 
 
@@ -13031,8 +13031,8 @@ header .logo{	display:block;	padding:4px 0;}
 
 .header-nav .nav > li { margin:0; padding:0;}
 .header-nav .nav > li > a { margin:0; padding:10px 12px; font-weight:600;}
-.is-fixed.color-fill .header-nav .nav > li { margin:0; padding:0;}
-.is-fixed.color-fill .header-nav .nav > li > a { margin:0; padding:10px 12px;}
+.stuck.color-fill .header-nav .nav > li { margin:0; padding:0;}
+.stuck.color-fill .header-nav .nav > li > a { margin:0; padding:10px 12px;}
 
 }
 /*======================================

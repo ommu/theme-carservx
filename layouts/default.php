@@ -1,16 +1,42 @@
 <?php
 /**
  * @var string $content
- * @var \yii\web\View $this
+ * @var $this app\components\View
  */
 
 use yii\helpers\Html;
 use yii\helpers\Url;
 use themes\carservx\assets\ThemePluginAsset;
+use themes\carservx\assets\ThemeAsset;
 
 $themeAsset = ThemePluginAsset::register($this);
 $dir = Yii::$app->request->get('dir') ? Yii::$app->request->get('dir') : 'ltr';
 $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+if($this->subLayout == 'default' || $this->subLayout == 'skin1') {
+	$this->registerCssFile($themeAsset->baseUrl . '/css/skin/skin-1.css', ['depends' => [ThemeAsset::className()]]);
+	if($isDemoTheme)
+		$logo = 'logo-dark.png';
+} else if($this->subLayout == 'skin2') {
+	$this->registerCssFile($themeAsset->baseUrl . '/css/skin/skin-2.css', ['depends' => [ThemeAsset::className()]]);
+	if($isDemoTheme)
+		$logo = 'logo-2.png';
+} else if($this->subLayout == 'skin3') {
+	$this->registerCssFile($themeAsset->baseUrl . '/css/skin/skin-3.css', ['depends' => [ThemeAsset::className()]]);
+	if($isDemoTheme)
+		$logo = 'logo-3.png';
+} else if($this->subLayout == 'skin4') {
+	$this->registerCssFile($themeAsset->baseUrl . '/css/skin/skin-4.css', ['depends' => [ThemeAsset::className()]]);
+	if($isDemoTheme)
+		$logo = 'logo-4.png';
+} else if($this->subLayout == 'skin5') {
+	$this->registerCssFile($themeAsset->baseUrl . '/css/skin/skin-5.css', ['depends' => [ThemeAsset::className()]]);
+	if($isDemoTheme)
+		$logo = 'logo-5.png';
+} else if($this->subLayout == 'skin6') {
+	$this->registerCssFile($themeAsset->baseUrl . '/css/skin/skin-65.css', ['depends' => [ThemeAsset::className()]]);
+	if($isDemoTheme)
+		$logo = 'logo-6.png';
+}
 
 $this->beginPage();?>
 <!DOCTYPE html>
@@ -39,7 +65,7 @@ $this->beginPage();?>
 					<div class="logo-header">
 						<div class="logo-header-inner logo-header-one">
 							<a href="index.html">
-								<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/logo-dark.png" alt="" />
+								<img src="<?php echo $themeAsset->baseUrl; ?>/demo/images/<?php echo $logo; ?>" alt="" />
 							</a>
 						</div>
 					</div>
@@ -154,51 +180,17 @@ $this->beginPage();?>
 			<div class="overlay-main bg-secondry opacity-09"></div>
 			<div class="container">
 				<div class="row">
+					<?php //begin.footer address
+					echo \themes\carservx\components\FooterAddress::widget(); ?>
 					<!-- ABOUT COMPANY -->
-					<div class="col-lg-4 col-md-4 col-sm-4">
-						<div class="widget widget_address_outer m-b20">
-							<h4 class="widget-title">Get In Touch</h4>
-							<ul class="widget_address">
-								<li><i class="fa fa-map-marker text-primary"></i>92 Princess Road, parkvenue,Greater London, NW18JR, United Kingdom</li>
-								<li><i class="fa fa-envelope text-primary"></i>carservxdemo@gmail.com</li>
-								<li><i class="fa fa-phone text-primary"></i>(+0091) 912-3456-073</li>
-							</ul>
-						</div>
-					</div>
 
-					<!-- TAGS -->
-					<div class="col-lg-3 col-md-3 col-sm-4">
-						<div class="widget widget_services inline-links">
-							<h4 class="widget-title">links</h4>
-							<ul>
-								<li><a href="about-1.html">About</a></li>
-								<li><a href="post-gallery.html">Gallery</a></li>
-								<li><a href="news-grid.html">Blog</a></li>
-								<li><a href="work-masonry.html">Faq</a></li>
-								<li><a href="contact-1.html">Contact Us</a></li>
-							</ul>
-						</div>
-					</div>
+					<?php //begin.footer menu
+					echo \themes\carservx\components\FooterMenu::widget(); ?>
 
-					<!-- USEFUL LINKS -->
-					<div class="col-lg-5 col-md-5 col-sm-4">
-						<div class="widget news-letter-footer">
-							<h4 class="widget-title">Signup to Newsletter</h4>
-							<p>Keep up on our always evolving products features and technology. Enter your e-mail and subscribe to our newsletter.</p>
-							<div class="newsletter-f-right text-center">
-								<form role="search" method="post">
-									<div class="input-group">
-										<input name="news-letter" class="form-control" placeholder="ENTER YOUR EMAIL" type="text">
-										<span class="input-group-btn">
-											<button type="submit" class="site-button site-btn-effect"><span>Submit</span></button>
-										</span>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
+					<?php //begin.footer newsletter
+					echo \themes\carservx\components\FooterNewsletter::widget(); ?>
 
-					<!-- NEWSLETTER -->
+				<!-- NEWSLETTER -->
 				</div>
 				<div class="m-b10">
 					<div class="wt-divider"></div>
@@ -206,7 +198,9 @@ $this->beginPage();?>
 				<div class="footer-bottom">
 					<div class="row">
 						<div class="wt-footer-bot-left">
-							<span class="copyrights-text">© 2019 Your Company. All Rights Reserved. Designed By <span class="text-primary"> thewebmax.</span></span>
+							<span class="copyrights-text">© 2019 Your Company. All Rights Reserved. 
+							<?php if($isDemoTheme) {?>Designed By <span class="text-primary"> thewebmax.</span><?php }?>
+							</span>
 						</div>
 						<div class="wt-footer-bot-right">
 							<ul class="copyrights-social pull-right">
@@ -259,7 +253,6 @@ $this->beginPage();?>
 </div>
 
 <?php if($isDemoTheme) {?>
-<?php }?>
 <div class="styleswitcher">
 	<div class="switcher-btn-bx">
 		<a class="switch-btn">
@@ -270,15 +263,16 @@ $this->beginPage();?>
 	<div class="styleswitcher-inner">
 		<h6 class="switcher-title">Color Skin</h6>
 		<ul class="color-skins">
-			<li><a class="theme-skin skin-1" href="?theme=css/skin/skin-1" title="default Theme"></a></li>
-			<li><a class="theme-skin skin-2" href="?theme=css/skin/skin-2" title="pink Theme"></a></li>
-			<li><a class="theme-skin skin-3" href="?theme=css/skin/skin-3" title="sky Theme"></a></li>
-			<li><a class="theme-skin skin-4" href="?theme=css/skin/skin-4" title="green Theme"></a></li>
-			<li><a class="theme-skin skin-5" href="?theme=css/skin/skin-5" title="red Theme"></a></li>
+			<li><a class="theme-skin skin-1" href="?theme=css/skin/skin-1" title="Default Theme (Red)"></a></li>
+			<li><a class="theme-skin skin-2" href="?theme=css/skin/skin-2" title="Yellow Theme"></a></li>
+			<li><a class="theme-skin skin-3" href="?theme=css/skin/skin-3" title="Sky Themee"></a></li>
+			<li><a class="theme-skin skin-4" href="?theme=css/skin/skin-4" title="Orange Theme"></a></li>
+			<li><a class="theme-skin skin-5" href="?theme=css/skin/skin-5" title="Green Theme"></a></li>
 			<li><a class="theme-skin skin-6" href="?theme=css/skin/skin-6" title="orange Theme"></a></li>
 		</ul>
 	</div>
 </div>
+<?php }?>
 
 <?php $this->endBody(); ?>
 </body>
