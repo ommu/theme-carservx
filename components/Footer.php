@@ -12,7 +12,7 @@ class Footer extends \yii\base\Widget
 	{
 		if(!Yii::$app->isDemoTheme()) {
 			$copyright = unserialize(Yii::$app->setting->get(join('_', [Yii::$app->id, 'copyright'])));
-			$this->siteName = Html::a($this->siteName, $copyright['url'] ? $copyright['url'] : ['/site/index'], ['title'=>$this->siteName, 'class'=>'text-primary']);
+			$this->siteName = Html::a($copyright['name'], $copyright['url'] ? $copyright['url'] : ['/site/index'], ['title'=>$copyright['name'], 'class'=>'text-primary']);
 		}
 	}
 
