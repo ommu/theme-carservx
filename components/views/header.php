@@ -6,30 +6,10 @@
 
 use yii\helpers\Html;
 use yii\helpers\Url;
-use app\models\BaseSetting;
 
 $themeAsset = \themes\carservx\assets\ThemeAsset::register($this);
 $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
-
-$siteName = unserialize(Yii::$app->setting->get(join('_', [Yii::$app->id, 'name'])));
-if($siteName['long'])
-	Yii::$app->name = $siteName['long'];
-
-if($isDemoTheme) {
-	if($this->subLayout == 'default' || $this->subLayout == 'skin1')
-		$logo = 'logo-dark.png';
-	else if($this->subLayout == 'skin2')
-		$logo = 'logo-2.png';
-	else if($this->subLayout == 'skin3')
-		$logo = 'logo-3.png';
-	else if($this->subLayout == 'skin4')
-		$logo = 'logo-4.png';
-	else if($this->subLayout == 'skin5')
-		$logo = 'logo-5.png';
-	else if($this->subLayout == 'skin6')
-		$logo = 'logo-6.png';
-} else
-	$logo = Yii::$app->setting->get(join('_', [Yii::$app->id, 'logo']));
+$context = $this->context;
 ?>
 
 <header class="site-header header-style-1 nav-wide">
@@ -38,12 +18,8 @@ if($isDemoTheme) {
 			<div class="container">
 				<div class="logo-header">
 					<div class="logo-header-inner logo-header-one">
-						<?php $logoPath = join('/', [BaseSetting::getUploadPath(false, Yii::$app->id)]);
-						$logoFullPath = Url::to(join('/', ['@webpublic', $logoPath, $logo]));
-						if($isDemoTheme)
-							$logoFullPath = join('/', [$themeAsset->baseUrl, 'demo/images', $logo]); ?>
 						<a href="<?php echo $isDemoTheme ? Url::to(['/carservx-site/index']) : Url::to(['/site/index']);?>" title="<?php echo Yii::$app->name;?>">
-							<?php echo $isDemoTheme || (!$isDemoTheme && $logo) ? Html::img($logoFullPath, ['alt'=>Yii::$app->name]) : Yii::$app->name; ?>
+							<?php echo $context->logo; ?>
 						</a>
 					</div>
 				</div>
