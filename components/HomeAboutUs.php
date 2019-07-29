@@ -10,7 +10,6 @@ class HomeAboutUs extends \yii\base\Widget
 
 	public $content = [
 		[
-			'id' => '01',
 			'title' => 'International Standards',
 			'intro' => 'It is a long established fact that a reader will be distracted by the readable contentof a page.',
 			'icon' => 'certificate',
@@ -18,7 +17,6 @@ class HomeAboutUs extends \yii\base\Widget
 			'url' => '/carservx-blog/detail',
 		],
 		[
-			'id' => '02',
 			'title' => 'We love our client',
 			'intro' => 'It is a long established fact that a reader will be distracted by the readable contentof a page.',
 			'icon' => 'employee',
@@ -26,7 +24,6 @@ class HomeAboutUs extends \yii\base\Widget
 			'url' => '/carservx-blog/detail',
 		],
 		[
-			'id' => '03',
 			'title' => 'Only original parts',
 			'intro' => 'It is a long established fact that a reader will be distracted by the readable contentof a page.',
 			'icon' => 'car-parts',

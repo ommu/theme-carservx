@@ -35,7 +35,7 @@ $context = $this->context;
 					<div class="wt-icon-box-wraper p-a30 text-white bg-no-repeat bg-cover overlay-wraper m-b30 bg-dark-section-hover v-icon-effect" style="background-image:url(<?php echo join('/', [$themeAsset->baseUrl, $val['image']]) ?>);">
 						<div class="overlay-main bg-black opacity-07"></div>
 						<div class="relative icon-count-1">
-							<span class="icon-count-number"><?php echo $val['id'];?></span>
+							<span class="icon-count-number"><?php echo str_pad($i, 2, '0', STR_PAD_LEFT);?></span>
 							<div class="icon-xl inline-icon m-b25">
 								<span class="icon-cell"><i class="v-icon flaticon-<?php echo $val['icon'];?>"></i></span>
 							</div>

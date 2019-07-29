@@ -10,6 +10,7 @@ use yii\helpers\Url;
 $themeAsset = \themes\carservx\assets\ThemeAsset::register($this);
 \themes\carservx\assets\OwlCarouselPluginAsset::register($this);
 $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+$context = $this->context;
 ?>
 
 <div class="section-full small-device p-b80">
@@ -27,97 +28,21 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 		</div>
 		<div class="container">
 			<div class="owl-carousel services_home owl-btn-bottom-center services-half-section-bottom">
-				<?php //begin.content ?>
+				<?php foreach ($context->content as $key => $val) {
+					$url = !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : Url::to([$val['url']]);?>
 				<div class="item">
-
 					<div class="wt-box">
 						<div class="wt-media">
-							<a href="javascript:void(0);"><img src="<?php echo $themeAsset->baseUrl ?>/demo/images/gallery/pic6.jpg" alt=""></a>
+							<a href="<?php echo $url;?>" title="<?php echo $val['title'];?>"><img src="<?php echo join('/', [$themeAsset->baseUrl, $val['image']]); ?>" alt="<?php echo $val['title'];?>"></a>
 						</div>
 						<div class="wt-info p-a30 bg-gray">
-							<h4 class="wt-title m-t0"><a href="javascript:void(0);">Tires and Wheels</a></h4>
-							<p>There are many variations of passag es of Lorem Ipsum available, but the majority have suffered.</p>
-							<a href="javascript:void(0);" class="site-button site-btn-effect">Read More</a>
+							<h4 class="wt-title m-t0"><a href="<?php echo $url;?>" title="<?php echo $val['title'];?>"><?php echo $val['title'];?></a></h4>
+							<p><?php echo $val['intro'];?></p>
+							<a href="<?php echo $url;?>" title="<?php echo $val['title'];?>" class="site-button site-btn-effect">Read More</a>
 						</div>
-
 					</div>
 				</div>
-
-				<div class="item">
-
-					<div class="wt-box">
-						<div class="wt-media">
-							<a href="javascript:void(0);"><img src="<?php echo $themeAsset->baseUrl ?>/demo/images/gallery/pic2.jpg" alt=""></a>
-						</div>
-						<div class="wt-info p-a30 bg-gray">
-							<h4 class="wt-title m-t0"><a href="javascript:void(0);">Technical Repairs</a></h4>
-							<p>There are many variations of passag es of Lorem Ipsum available, but the majority have suffered.</p>
-							<a href="javascript:void(0);" class="site-button site-btn-effect">Read More</a>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="item">
-
-					<div class="wt-box">
-						<div class="wt-media">
-							<a href="javascript:void(0);"><img src="<?php echo $themeAsset->baseUrl ?>/demo/images/gallery/pic11.jpg" alt=""></a>
-						</div>
-						<div class="wt-info p-a30 bg-gray">
-							<h4 class="wt-title m-t0"><a href="javascript:void(0);">Electrical Works</a></h4>
-							<p>There are many variations of passag es of Lorem Ipsum available, but the majority have suffered.</p>
-							<a href="javascript:void(0);" class="site-button site-btn-effect">Read More</a>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="item">
-
-					<div class="wt-box">
-						<div class="wt-media">
-							<a href="javascript:void(0);"><img src="<?php echo $themeAsset->baseUrl ?>/demo/images/gallery/pic6.jpg" alt=""></a>
-						</div>
-						<div class="wt-info p-a30 bg-gray">
-							<h4 class="wt-title m-t0"><a href="javascript:void(0);">Tires and Wheels</a></h4>
-							<p>There are many variations of passag es of Lorem Ipsum available, but the majority have suffered.</p>
-							<a href="javascript:void(0);" class="site-button site-btn-effect">Read More</a>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="item">
-
-					<div class="wt-box">
-						<div class="wt-media">
-							<a href="javascript:void(0);"><img src="<?php echo $themeAsset->baseUrl ?>/demo/images/gallery/pic2.jpg" alt=""></a>
-						</div>
-						<div class="wt-info p-a30 bg-gray">
-							<h4 class="wt-title m-t0"><a href="javascript:void(0);">Technical Repairs</a></h4>
-							<p>There are many variations of passag es of Lorem Ipsum available, but the majority have suffered.</p>
-							<a href="javascript:void(0);" class="site-button site-btn-effect">Read More</a>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="item">
-
-					<div class="wt-box">
-						<div class="wt-media">
-							<a href="javascript:void(0);"><img src="<?php echo $themeAsset->baseUrl ?>/demo/images/gallery/pic11.jpg" alt=""></a>
-						</div>
-						<div class="wt-info p-a30 bg-gray">
-							<h4 class="wt-title m-t0"><a href="javascript:void(0);">Electrical Works</a></h4>
-							<p>There are many variations of passag es of Lorem Ipsum available, but the majority have suffered.</p>
-							<a href="javascript:void(0);" class="site-button site-btn-effect">Read More</a>
-						</div>
-
-					</div>
-				</div>
-				<?php //end.content ?>
+				<?php }?>
 			</div>
 		</div>
 	</div>

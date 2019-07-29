@@ -32,7 +32,7 @@ $context = $this->context;
 				<div class="col-md-4 col-sm-4">
 					<div class="wt-icon-box-wraper m-b50">
 						<div class="relative icon-count-2 bg-white p-a30">
-							<span class="icon-count-number"><?php echo $val['id'];?></span>
+							<span class="icon-count-number"><?php echo str_pad($i, 2, '0', STR_PAD_LEFT);?></span>
 							<div class="icon-xl inline-icon m-b25 text-primary">
 								<span class="icon-cell"><i class="flaticon-<?php echo $val['icon'];?>"></i></span>
 							</div>
