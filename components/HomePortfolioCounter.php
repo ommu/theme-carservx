@@ -4,6 +4,8 @@ namespace themes\carservx\components;
 class HomePortfolioCounter extends \yii\base\Widget
 {
 	public $paddingTop = true;
+	public $paddingBottom = true;
+	public $bgClass = 'bg-white';
 	public $withBackground = false;
 
 	public function run() {

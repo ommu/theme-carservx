@@ -15,7 +15,7 @@ $context = $this->context;
 
 <div class="section-full">
 	<div class="container">
-		<div class="row <?php echo $context->paddingTop ? 'p-t80' : '';?> p-b50">
+		<div class="row <?php echo $context->paddingTop ? 'p-t80' : '';?> <?php echo $context->paddingBottom ? 'p-b50' : '';?> <?php echo $context->bgClass;?>">
 			<div class="col-md-3 col-sm-6 col-xs-6 col-xs-100pc">
 				<div class="wt-icon-box-wraper left text-primary m-b30">
 					<span class="icon-md">
