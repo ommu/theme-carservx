@@ -7,6 +7,7 @@ class HomeAboutUs extends \yii\base\Widget
 	public $bgClass = 'bg-white';
 	public $paddingTop = true;
 	public $paddingBottom = true;
+
 	public $content = [
 		[
 			'id' => '01',
