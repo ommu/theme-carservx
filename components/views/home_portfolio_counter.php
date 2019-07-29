@@ -16,53 +16,19 @@ $context = $this->context;
 <div class="section-full">
 	<div class="container">
 		<div class="row <?php echo $context->paddingTop ? 'p-t80' : '';?> <?php echo $context->paddingBottom ? 'p-b50' : '';?> <?php echo $context->bgClass;?>">
+			<?php foreach ($context->portfolios as $key => $val) {?>
 			<div class="col-md-3 col-sm-6 col-xs-6 col-xs-100pc">
 				<div class="wt-icon-box-wraper left text-primary m-b30">
 					<span class="icon-md">
-						<i class="flaticon-spray"></i>
+						<i class="flaticon-<?php echo $val['icon'];?>"></i>
 					</span>
 					<div class="icon-content">
-						<h2 class="counter m-b5 m-t0">125</h2>
-						<h4 class="m-b0">Car Painted</h4>
+						<h2 class="counter m-b5 m-t0"><?php echo $val['counter'];?></h2>
+						<h4 class="m-b0"><?php echo $val['category'];?></h4>
 					</div>
 				</div>
 			</div>
-
-			<div class="col-md-3 col-sm-6 col-xs-6 col-xs-100pc">
-				<div class="wt-icon-box-wraper left text-primary m-b30">
-					<span class="icon-md">
-						<i class="flaticon-shift"></i>
-					</span>
-					<div class="icon-content">
-						<h2 class="counter m-b5 m-t0">455</h2>
-						<h4 class="m-b0">Gears Repaired</h4>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-3 col-sm-6 col-xs-6 col-xs-100pc">
-				<div class="wt-icon-box-wraper left text-primary m-b30">
-					<span class="icon-md">
-						<i class="flaticon-worker"></i>
-					</span>
-					<div class="icon-content">
-						<h2 class="counter m-b5 m-t0">210</h2>
-						<h4 class="m-b0">Senior Engineers</h4>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-3 col-sm-6 col-xs-6 col-xs-100pc">
-				<div class="wt-icon-box-wraper left text-primary m-b30">
-					<span class="icon-md">
-						<i class="flaticon-radiator"></i>
-					</span>
-					<div class="icon-content">
-						<h2 class="counter m-b5 m-t0">125</h2>
-						<h4 class="m-b0">Radiators Repaired</h4>
-					</div>
-				</div>
-			</div>
+			<?php }?>
 		</div>
 	</div>
 </div>
