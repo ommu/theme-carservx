@@ -17,7 +17,7 @@ use yii\helpers\Url;
 $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 ?>
 
-<div class="section-full small-device  p-t80 p-b50 bg-gray">
+<div class="section-full small-device p-t80 p-b50 bg-gray">
 	<div class="container-fluid">
 		<?php echo $this->render('index_1'); ?>
 	</div>

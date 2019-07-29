@@ -16,6 +16,7 @@ use yii\helpers\Url;
 
 $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 \themes\carservx\assets\IsotopePluginAsset::register($this);
+\themes\carservx\assets\MagnificPopupPluginAsset::register($this);
 ?>
 
 <div class="filter-wrap p-b30 text-left">

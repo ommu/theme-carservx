@@ -16,10 +16,11 @@ use yii\helpers\Url;
 
 $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 \themes\carservx\assets\IsotopePluginAsset::register($this);
+\themes\carservx\assets\MagnificPopupPluginAsset::register($this);
 ?>
 
 <div class="filter-wrap p-b30 text-left">
-	<ul class="masonry-filter link-style  text-uppercase">
+	<ul class="masonry-filter link-style text-uppercase">
 		<li class="active"><a data-filter="*" href="javascript:void(0);">All</a></li>
 		<li><a data-filter=".cat-1" href="javascript:void(0);">Oil Change</a></li>
 		<li><a data-filter=".cat-2" href="javascript:void(0);">Automotive Filters</a></li>
@@ -30,8 +31,8 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 </div>
 
 <div class="portfolio-wrap mfp-gallery work-grid row clearfix">
-	<div class="masonry-item cat-1  col-md-6 col-sm-6 m-b30">
-		<div class="wt-box  work-hover-content">
+	<div class="masonry-item cat-1 col-md-6 col-sm-6 m-b30">
+		<div class="wt-box work-hover-content">
 			<div class="img-center-icon">
 				<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/gallery/pic1.jpg" alt="">
 			</div>
@@ -44,7 +45,7 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 		</div>
 	</div>
 	<div class="masonry-item cat-2 col-md-6 col-sm-6 m-b30">
-		<div class="wt-box  work-hover-content">
+		<div class="wt-box work-hover-content">
 			<div class="img-center-icon">
 				<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/gallery/pic2.jpg" alt="">
 			</div>
@@ -57,7 +58,7 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 		</div>
 	</div>
 	<div class="masonry-item cat-3 col-md-6 col-sm-6 m-b30">
-		<div class="wt-box   work-hover-content">
+		<div class="wt-box work-hover-content">
 			<div class="img-center-icon">
 				<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/gallery/pic4.jpg" alt="">
 			</div>
@@ -69,7 +70,7 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 		</div>
 	</div>
 	<div class="masonry-item cat-4 col-md-6 col-sm-6 m-b30">
-		<div class="wt-box   work-hover-content">
+		<div class="wt-box work-hover-content">
 			<div class="img-center-icon">
 				<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/gallery/pic4.jpg" alt="">
 			</div>
@@ -81,7 +82,7 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 		</div>
 	</div>
 	<div class="masonry-item cat-5 col-md-6 col-sm-6 m-b30">
-		<div class="wt-box   work-hover-content">
+		<div class="wt-box work-hover-content">
 			<div class="img-center-icon">
 				<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/gallery/pic5.jpg" alt="">
 			</div>
@@ -93,7 +94,7 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 		</div>
 	</div>
 	<div class="masonry-item cat-4 col-md-6 col-sm-6 m-b30">
-		<div class="wt-box   work-hover-content">
+		<div class="wt-box work-hover-content">
 			<div class="img-center-icon">
 				<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/gallery/pic6.jpg" alt="">
 			</div>
@@ -105,7 +106,7 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 		</div>
 	</div>
 	<div class="masonry-item cat-3 col-md-6 col-sm-6 m-b30">
-		<div class="wt-box   work-hover-content">
+		<div class="wt-box work-hover-content">
 			<div class="img-center-icon">
 				<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/gallery/pic7.jpg" alt="">
 			</div>
@@ -117,7 +118,7 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 		</div>
 	</div>
 	<div class="masonry-item cat-2 col-md-6 col-sm-6 m-b30">
-		<div class="wt-box   work-hover-content">
+		<div class="wt-box work-hover-content">
 			<div class="img-center-icon">
 				<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/gallery/pic8.jpg" alt="">
 			</div>
@@ -129,7 +130,7 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 		</div>
 	</div>
 	<div class="masonry-item cat-1 col-md-6 col-sm-6 m-b30">
-		<div class="wt-box   work-hover-content">
+		<div class="wt-box work-hover-content">
 			<div class="img-center-icon">
 				<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/gallery/pic9.jpg" alt="">
 			</div>

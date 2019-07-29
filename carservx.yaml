@@ -64,7 +64,7 @@ theme_menu:
       - label: Faqs
         url: ['/carservx-page/faq']
         icon: 
-  - label: Srvices
+  - label: Services
     url: ['/#']
     icon: 
     items: 

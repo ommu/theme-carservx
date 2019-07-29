@@ -75,22 +75,25 @@ All JavaScript fuctions Start
 		jQuery('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');	
 	}  
 
-// > magnificPopup function	by = magnific-popup.js =========================== //
-	function magnific_popup(){
-        jQuery('.mfp-gallery').magnificPopup({
-          delegate: '.mfp-link',
-          type: 'image',
-          tLoading: 'Loading image #%curr%...',
-          mainClass: 'mfp-img-mobile',
-          gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-          },
-          image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-          }
-       });
+	// > magnificPopup function	by = magnific-popup.js =========================== //
+	function magnific_popup() {
+		var mfpGallery = jQuery('.mfp-gallery');
+		if(mfpGallery.length > 0) {
+			mfpGallery.magnificPopup({
+				delegate: '.mfp-link',
+				type: 'image',
+				tLoading: 'Loading image #%curr%...',
+				mainClass: 'mfp-img-mobile',
+				gallery: {
+					enabled: true,
+					navigateByImgClick: true,
+					preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+				},
+				image: {
+					tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+				}
+			});
+		}
 	}
 
 	// > magnificPopup for video function	by = magnific-popup.js ===================== //	
