@@ -408,9 +408,7 @@ echo \themes\carservx\components\HomeOurService::widget([
 ]); ?>
 
 <?php //begin.portfolio counter
-echo \themes\carservx\components\HomePortfolioCounter::widget([
-	'paddingTop' => true,
-]); ?>
+echo \themes\carservx\components\HomePortfolioCounter::widget(); ?>
 
 <?php //begin.contact
 echo \themes\carservx\components\HomeContact::widget(); ?>
