@@ -3473,6 +3473,7 @@ transform: translateY(-50%);
 /*-------widget service-------*/
 .widget_address li{margin-bottom:20px;color:#999999;position:relative;padding-left:30px;}
 .widget_address li i{position:absolute;left:0px;top:5px;font-size:18px;}
+.widget_address li a {color:#999999;}
 .widget_address_outer .social-icons li{
 	padding-right:10px;
 }
