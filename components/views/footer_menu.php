@@ -9,17 +9,17 @@ use yii\helpers\Url;
 
 $themeAsset = \themes\carservx\assets\ThemeAsset::register($this);
 $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+$context = $this->context;
 ?>
 
 <div class="col-lg-3 col-md-3 col-sm-4">
 	<div class="widget widget_services inline-links">
 		<h4 class="widget-title">links</h4>
 		<ul>
-			<li><a href="about-1.html">About</a></li>
-			<li><a href="post-gallery.html">Gallery</a></li>
-			<li><a href="news-grid.html">Blog</a></li>
-			<li><a href="work-masonry.html">Faq</a></li>
-			<li><a href="contact-1.html">Contact Us</a></li>
+			<?php foreach ($context->menus as $key => $val) {
+				$url = !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : Url::to([$val['url']]);?>
+			<li><a href="<?php echo $url;?>" title="<?php echo $val['title'];?>"><?php echo $val['title'];?></a></li>
+			<?php }?>
 		</ul>
 	</div>
 </div>
