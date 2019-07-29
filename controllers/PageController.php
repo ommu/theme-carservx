@@ -35,7 +35,7 @@ class PageController extends Controller
 		parent::init();
 
 		$this->view->theme('carservx');
-		$this->layout = 'main';
+		$this->layout = 'front_default';
 	}
 
 	/**

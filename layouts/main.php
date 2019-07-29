@@ -8,11 +8,12 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 ?>
 
-<?php $this->beginContent('@themes/carservx/layouts/default.php'); ?>
+<?php $this->beginContent('@themes/carservx/layouts/front_default.php'); ?>
 
-<?php //begin.breadcrumb and title
-echo \themes\carservx\components\BreadcrumbAndTitle::widget(); ?>
-
-<?php echo $content; ?>
+<div class="section-full p-t80 p-b50">
+	<div class="container">
+		<?php echo $content; ?>
+	</div>
+</div>
 
 <?php $this->endContent(); ?>
