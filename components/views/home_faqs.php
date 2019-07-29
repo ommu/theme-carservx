@@ -11,6 +11,7 @@ $themeAsset = \themes\carservx\assets\ThemeAsset::register($this);
 $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 $context = $this->context;
 ?>
+
 <div class="section-full small-device p-t80 p-b80 <?php echo $context->bgClass;?>">
 	<div class="section-content">
 		<div class="row half-acc-section">

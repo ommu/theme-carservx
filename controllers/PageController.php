@@ -70,7 +70,7 @@ class PageController extends Controller
 	 */
 	public function actionTeam()
 	{
-		$this->view->title = Yii::t('app', 'Team');
+		$this->view->title = Yii::t('app', 'Our Team');
 		$this->view->description = '';
 		$this->view->keywords = '';
 		return $this->render('team');

@@ -425,6 +425,7 @@ echo \themes\carservx\components\HomeTestimony::widget([
 echo \themes\carservx\components\HomeTeam::widget([
 	'bgClass' => 'bg-gray',
 	'withTestimony' => false,
+	'withBackground' => true,
 ]); ?>
 
 <?php //begin.latest news (blog)

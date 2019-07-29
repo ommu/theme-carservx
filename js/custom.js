@@ -93,11 +93,14 @@ All JavaScript fuctions Start
        });
 	}
 
-// > magnificPopup for video function	by = magnific-popup.js ===================== //	
-	function magnific_video(){	
-		jQuery('.mfp-video').magnificPopup({
-			type: 'iframe',
-		});
+	// > magnificPopup for video function	by = magnific-popup.js ===================== //	
+	function magnific_video() {
+		var mfpVideo = jQuery('.mfp-video');
+		if(mfpVideo.length > 0) {
+			mfpVideo.magnificPopup({
+				type: 'iframe',
+			});
+		}
 	}
 
 // Vertically center Bootstrap modal popup function by = custom.js ==============//
@@ -286,6 +289,7 @@ All JavaScript fuctions Start
 			autoplay: true,
 			margin: 30,
 			nav: true,
+			navElement: 'div',
 			dots: false,
 			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
 			responsive:{
@@ -390,14 +394,17 @@ All JavaScript fuctions Start
 		});	
 	}	
 
-	
 	//  Counter Section function by = counterup.min.js
-	function counter_section(){
-		jQuery('.counter').counterUp({
-			delay: 10,
-			time: 3000
-		});	
-	}		
+	function counter_section() {
+		var portfolioCounter = jQuery('.counter');
+		if(portfolioCounter.length > 0) {
+			portfolioCounter.counterUp({
+				delay: 10,
+				time: 3000
+			});
+		}
+	}
+
 	// searchrCollapse function by = custom.js
 	function searchCollapse(){
 		jQuery('.site-search-btn').on('click', function () { 

@@ -445,6 +445,7 @@ echo \themes\carservx\components\HomeTestimony::widget([
 <?php //begin.team
 echo \themes\carservx\components\HomeTeam::widget([
 	'withTestimony' => false,
+	'withBackground' => true,
 ]); ?>
 
 <!-- OFFER SECTION START -->
