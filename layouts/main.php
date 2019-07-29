@@ -10,6 +10,9 @@ use yii\helpers\Url;
 
 <?php $this->beginContent('@themes/carservx/layouts/default.php'); ?>
 
+<?php //begin.breadcrumb and title
+echo \themes\carservx\components\BreadcrumbAndTitle::widget(); ?>
+
 <?php echo $content; ?>
 
 <?php $this->endContent(); ?>
