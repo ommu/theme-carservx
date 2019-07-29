@@ -1,19 +1,19 @@
 <?php
 /**
- * HomeController
+ * PageController
  * @var $this app\components\View
  *
  * Reference start
  * TOC :
  *	Index
- *	Index2
- *	Index3
- *	Index4
+ *	About
+ *	Team
+ *	Faq
  *
  * @author Putra Sudaryanto <putra@sudaryanto.id>
  * @contact (+62)856-299-4114
  * @copyright Copyright (c) 2019 OMMU (www.ommu.co)
- * @created date 22 July 2019, 10:21 WIB
+ * @created date 29 July 2019, 19:35 WIB
  * @link https://github.com/ommu/theme-carservx
  *
  */
@@ -23,7 +23,7 @@ namespace themes\carservx\controllers;
 use Yii;
 use app\components\Controller;
 
-class HomeController extends Controller
+class PageController extends Controller
 {
 	public static $backoffice = false;
 
@@ -35,7 +35,7 @@ class HomeController extends Controller
 		parent::init();
 
 		$this->view->theme('carservx');
-		$this->layout = 'default';
+		$this->layout = 'main';
 	}
 
 	/**
@@ -43,7 +43,7 @@ class HomeController extends Controller
 	 */
 	public function getViewPath()
 	{
-		return $this->view->theme->getBasePath() . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR . 'home';
+		return $this->view->theme->getBasePath() . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR . 'page';
 	}
 
 	/**
@@ -51,42 +51,39 @@ class HomeController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$this->view->title = Yii::t('app', 'Home 1');
-		$this->view->description = '';
-		$this->view->keywords = '';
-		return $this->render('index_1');
+		return $this->redirect(['about']);
 	}
 
 	/**
-	 * Index2 Action
+	 * About Action
 	 */
-	public function actionIndex2()
+	public function actionAbout()
 	{
-		$this->view->title = Yii::t('app', 'Home 2');
+		$this->view->title = Yii::t('app', 'About Us');
 		$this->view->description = '';
 		$this->view->keywords = '';
-		return $this->render('index_2');
+		return $this->render('about');
 	}
 
 	/**
-	 * Index3 Action
+	 * Team Action
 	 */
-	public function actionIndex3()
+	public function actionTeam()
 	{
-		$this->view->title = Yii::t('app', 'Home 3');
+		$this->view->title = Yii::t('app', 'Team');
 		$this->view->description = '';
 		$this->view->keywords = '';
-		return $this->render('index_3');
+		return $this->render('team');
 	}
 
 	/**
-	 * Index4 Action
+	 * Faq Action
 	 */
-	public function actionIndex4()
+	public function actionFaq()
 	{
-		$this->view->title = Yii::t('app', 'Home 4');
+		$this->view->title = Yii::t('app', 'Faq');
 		$this->view->description = '';
 		$this->view->keywords = '';
-		return $this->render('index_4');
+		return $this->render('faq');
 	}
 }
