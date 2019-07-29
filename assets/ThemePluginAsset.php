@@ -15,6 +15,7 @@ class ThemePluginAsset extends \yii\web\AssetBundle
 		"yii\bootstrap\BootstrapPluginAsset",
 		'themes\carservx\assets\WaypointsPluginAsset',
 		'themes\carservx\assets\SwitcherPluginAsset',
+		'themes\carservx\assets\StellarPluginAsset',
 	];
 
 	public $publishOptions = [

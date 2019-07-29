@@ -238,151 +238,169 @@ All JavaScript fuctions Start
 
 	// Home page testimonial function by = owl.carousel.js ========================== //
 	function testimonial_home() {
-		jQuery('.testimonial-home').owlCarousel({
-			loop: true,
-			autoplay: false,
-			margin: 30,
-			nav: false,
-			dots: true,
-			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-			responsive:{
-				0:{
-					items:1
-				},
-				991:{
-					items:1
-				},
-				1024:{
-					items:2
+		var testimony = jQuery('.testimonial-home');
+		if(testimony.length > 0) {
+			testimony.owlCarousel({
+				loop: true,
+				autoplay: false,
+				margin: 30,
+				nav: false,
+				dots: true,
+				navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+				responsive:{
+					0:{
+						items:1
+					},
+					991:{
+						items:1
+					},
+					1024:{
+						items:2
+					}
 				}
-			}
-		});
+			});
+		}
 	}
 
 	// Home page testimonial function by = owl.carousel.js ========================== //
 	function testimonial_home_with_team() {
-		jQuery('.testimonial-home-with-team').owlCarousel({
-			loop: true,
-			autoplay: true,
-			margin: 30,
-			nav: false,
-			dots: true,
-			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-			responsive:{
-				0:{
-					items:1
-				},
-				991:{
-					items:2
-				},
-				1170:{
-					items:1
+		var testimonyTeam = jQuery('.testimonial-home-with-team');
+		if(testimonyTeam.length > 0) {
+			testimonyTeam.owlCarousel({
+				loop: true,
+				autoplay: true,
+				margin: 30,
+				nav: false,
+				dots: true,
+				navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+				responsive:{
+					0:{
+						items:1
+					},
+					991:{
+						items:2
+					},
+					1170:{
+						items:1
+					}
 				}
-			}
-		});
+			});
+		}
 	}
 
 	// Home page Team function by = owl.carousel.js ========================== //
 	function team_home_with_testimony() {
-		jQuery('.team-home-with-testimony').owlCarousel({
-			loop: true,
-			autoplay: true,
-			margin: 30,
-			nav: true,
-			navElement: 'div',
-			dots: false,
-			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-			responsive:{
-				0:{
-					items:1
-				},
-				540:{
-					items:3
-				},
-				991:{
-					items:4
-				},
-				1170:{
-					items:2
+		var team = jQuery('.team-home-with-testimony');
+		if(team.length > 0) {
+			team.owlCarousel({
+				loop: true,
+				autoplay: true,
+				margin: 30,
+				nav: true,
+				navElement: 'div',
+				dots: false,
+				navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+				responsive:{
+					0:{
+						items:1
+					},
+					540:{
+						items:3
+					},
+					991:{
+						items:4
+					},
+					1170:{
+						items:2
+					}
 				}
-			}
-		});
+			});
+		}
 	}
 
 	// Home page Services function by = owl.carousel.js ========================== //
 	function services_home() {
-		jQuery('.services_home').owlCarousel({
-			loop: true,
-			autoplay: false,
-			margin: 30,
-			nav: true,
-			navElement: 'div',
-			dots: false,
-			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-			responsive:{
-				0:{
-					items:1
-				},
-				768:{
-					items:3
-				},
-				991:{
-					items:3
+		var services = jQuery('.services_home');
+		if(services.length > 0) {
+			services.owlCarousel({
+				loop: true,
+				autoplay: false,
+				margin: 30,
+				nav: true,
+				navElement: 'div',
+				dots: false,
+				navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+				responsive:{
+					0:{
+						items:1
+					},
+					768:{
+						items:3
+					},
+					991:{
+						items:3
+					}
 				}
-			}
-		});
+			});
+		}
 	}
 
 	// home_client_carouse function by = owl.carousel.js ========================== //
 	function home_client_carousel_navigation() {
-		jQuery('.home-client-carousel-navigation').owlCarousel({
-			loop: true,
-			margin: 10,
-			nav: true,
-			navElement: 'div',
-			dots: false,
-			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-			responsive:{
-				0:{
-					items:2
-				},
-				480:{
-					items:3
-				},
-				767:{
-					items:4
-				},
-				1000:{
-					items:5
+		var client = jQuery('.home-client-carousel-navigation');
+		if(client.length > 0) {
+			client.owlCarousel({
+				loop: true,
+				margin: 10,
+				nav: true,
+				navElement: 'div',
+				dots: false,
+				navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+				responsive:{
+					0:{
+						items:2
+					},
+					480:{
+						items:3
+					},
+					767:{
+						items:4
+					},
+					1000:{
+						items:5
+					}
 				}
-			}
-		});
+			});
+		}
 	}
 
 	// home_client_carouse function by = owl.carousel.js ========================== //
 	function home_client_carousel() {
-		jQuery('.home-client-carousel').owlCarousel({
-			loop: true,
-			margin: 10,
-			autoplay: false,
-			nav: false,
-			dots: true,
-			navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-			responsive:{
-				0:{
-					items:2
-				},
-				480:{
-					items:3
-				},
-				767:{
-					items:4
-				},
-				1000:{
-					items:6
+		var client = jQuery('.home-client-carousel');
+		if(client.length > 0) {
+			client.owlCarousel({
+				loop: true,
+				margin: 10,
+				autoplay: false,
+				nav: false,
+				dots: true,
+				navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+				responsive:{
+					0:{
+						items:2
+					},
+					480:{
+						items:3
+					},
+					767:{
+						items:4
+					},
+					1000:{
+						items:6
+					}
 				}
-			}
-		});
+			});
+		}
 	}
 
 // > Hover back  function ========================== //

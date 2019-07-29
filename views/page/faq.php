@@ -100,7 +100,7 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 						<div class="panel wt-panel">
 							<div class="acod-head">
 								<h4 class="acod-title">
-									<a data-toggle="collapse"  href="#collapseThree5" class="collapsed"  data-parent="#accordion5">
+									<a data-toggle="collapse" href="#collapseThree5" class="collapsed" data-parent="#accordion5">
 										Do you service and repair all makes and models of vehicles? 
 										<span class="indicator"><i class="fa fa-plus"></i></span>
 									</a>
@@ -128,7 +128,7 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 						<div class="panel wt-panel">
 							<div class="acod-head">
 								<h4 class="acod-title">
-									<a data-toggle="collapse"  href="#collapseFive5" class="collapsed"  data-parent="#accordion5">
+									<a data-toggle="collapse" href="#collapseFive5" class="collapsed" data-parent="#accordion5">
 									How long will it take to repair my vehicle?
 										<span class="indicator"><i class="fa fa-plus"></i></span>
 									</a>
@@ -150,7 +150,7 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 							<div class="acod-head acc-actives">
 								<h4 class="acod-title">
 									<a data-toggle="collapse" href="#collapseOne3" data-parent="#accordion3" >
-										Do you service and repair all makes and models of vehicles?  
+										Do you service and repair all makes and models of vehicles? 
 										<span class="indicator"><i class="fa fa-plus"></i></span>
 									</a>
 								</h4>
@@ -179,7 +179,7 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 						<div class="panel wt-panel">
 							<div class="acod-head">
 								<h4 class="acod-title">
-									<a data-toggle="collapse"  href="#collapseThree3" class="collapsed"  data-parent="#accordion3">
+									<a data-toggle="collapse" href="#collapseThree3" class="collapsed" data-parent="#accordion3">
 										What will happen if I don't have the repairs done right now? 
 										<span class="indicator"><i class="fa fa-plus"></i></span>
 									</a>

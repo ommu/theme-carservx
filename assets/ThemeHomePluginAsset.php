@@ -8,6 +8,5 @@ class ThemeHomePluginAsset extends \yii\web\AssetBundle
 		"themes\carservx\assets\CounterupPluginAsset",
 		"themes\carservx\assets\MagnificPopupPluginAsset",
 		"themes\carservx\assets\OwlCarouselPluginAsset",
-		'themes\carservx\assets\StellarPluginAsset',
 	];
 }
