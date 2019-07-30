@@ -22,7 +22,7 @@ class Header extends \yii\base\Widget
 			$themeAsset = \themes\carservx\assets\ThemeAsset::register($this->getView());
 
 			$subLayout = $this->view->getSubLayout();
-			if($subLayout == 'skin1')
+			if($subLayout == 'default' || $subLayout == 'skin1')
 				$logo = 'logo-dark.png';
 			else if($subLayout == 'skin2')
 				$logo = 'logo-2.png';
@@ -34,8 +34,6 @@ class Header extends \yii\base\Widget
 				$logo = 'logo-5.png';
 			else if($subLayout == 'skin6')
 				$logo = 'logo-6.png';
-			else
-				$logo = 'logo-dark.png';
 
 			$logoPath = join('/', [$themeAsset->baseUrl, 'demo/images', $logo]);
 
