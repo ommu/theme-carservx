@@ -70,13 +70,13 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 						<div class="panel wt-panel">
 							<div class="acod-head acc-actives">
 								<h4 class="acod-title">
-									<a data-toggle="collapse" href="#collapseOne5" data-parent="#accordion5" >
+									<a data-toggle="collapse" href="#collapseGeneral1" data-parent="#accordion5" >
 										How long will it take to repair my vehicle? 
 										<span class="indicator"><i class="fa fa-plus"></i></span>
 									</a>
 								</h4>
 							</div>
-							<div id="collapseOne5" class="acod-body collapse in">
+							<div id="collapseGeneral1" class="acod-body collapse in">
 								<div class="acod-content p-a15">
 									It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised sheets containing Lorem Ipsum passagese.web design lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
 								</div>
@@ -86,13 +86,13 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 						<div class="panel wt-panel">
 							<div class="acod-head">
 								<h4 class="acod-title">
-									<a data-toggle="collapse" href="#collapseTwo5" class="collapsed" data-parent="#accordion5">
+									<a data-toggle="collapse" href="#collapseGeneral2" class="collapsed" data-parent="#accordion5">
 									Why does my car need maintenance if it's running fine? 
 									<span class="indicator"><i class="fa fa-plus"></i></span>
 									</a>
 								</h4>
 							</div>
-							<div id="collapseTwo5" class="acod-body collapse">
+							<div id="collapseGeneral2" class="acod-body collapse">
 								<div class="acod-content p-a15">Graphic design lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised sheets containing Lorem Ipsum passagese.</div>
 							</div>
 						</div>
@@ -100,13 +100,13 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 						<div class="panel wt-panel">
 							<div class="acod-head">
 								<h4 class="acod-title">
-									<a data-toggle="collapse" href="#collapseThree5" class="collapsed" data-parent="#accordion5">
+									<a data-toggle="collapse" href="#collapseGeneral3" class="collapsed" data-parent="#accordion5">
 										Do you service and repair all makes and models of vehicles? 
 										<span class="indicator"><i class="fa fa-plus"></i></span>
 									</a>
 								</h4>
 							</div>
-							<div id="collapseThree5" class="acod-body collapse">
+							<div id="collapseGeneral3" class="acod-body collapse">
 								<div class="acod-content p-a15">Developement lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised sheets containing Lorem Ipsum passagese.</div>
 							</div>
 						</div>
@@ -114,13 +114,13 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 						<div class="panel wt-panel">
 							<div class="acod-head">
 								<h4 class="acod-title">
-									<a data-toggle="collapse" href="#collapseFour5" class="collapsed" data-parent="#accordion5">
+									<a data-toggle="collapse" href="#collapseGeneral4" class="collapsed" data-parent="#accordion5">
 										Can i Modify Once my request once its submitted? 
 										<span class="indicator"><i class="fa fa-plus"></i></span>
 									</a>
 								</h4>
 							</div>
-							<div id="collapseFour5" class="acod-body collapse">
+							<div id="collapseGeneral4" class="acod-body collapse">
 								<div class="acod-content p-a15">Graphic design lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised sheets containing Lorem Ipsum passagese.</div>
 							</div>
 						</div>
@@ -128,13 +128,13 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 						<div class="panel wt-panel">
 							<div class="acod-head">
 								<h4 class="acod-title">
-									<a data-toggle="collapse" href="#collapseFive5" class="collapsed" data-parent="#accordion5">
+									<a data-toggle="collapse" href="#collapseGeneral5" class="collapsed" data-parent="#accordion5">
 									How long will it take to repair my vehicle?
 										<span class="indicator"><i class="fa fa-plus"></i></span>
 									</a>
 								</h4>
 							</div>
-							<div id="collapseFive5" class="acod-body collapse">
+							<div id="collapseGeneral5" class="acod-body collapse">
 								<div class="acod-content p-a15">Developement lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised sheets containing Lorem Ipsum passagese.</div>
 							</div>
 						</div>
@@ -149,13 +149,13 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 						<div class="panel wt-panel">
 							<div class="acod-head acc-actives">
 								<h4 class="acod-title">
-									<a data-toggle="collapse" href="#collapseOne3" data-parent="#accordion3" >
+									<a data-toggle="collapse" href="#collapseAbout1" data-parent="#accordion3" >
 										Do you service and repair all makes and models of vehicles? 
 										<span class="indicator"><i class="fa fa-plus"></i></span>
 									</a>
 								</h4>
 							</div>
-							<div id="collapseOne3" class="acod-body collapse in">
+							<div id="collapseAbout1" class="acod-body collapse in">
 								<div class="acod-content p-a15">
 									It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised sheets containing Lorem Ipsum passagese.web design lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
 								</div>
@@ -165,13 +165,13 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 						<div class="panel wt-panel">
 							<div class="acod-head">
 								<h4 class="acod-title">
-									<a data-toggle="collapse" href="#collapseTwo3" class="collapsed" data-parent="#accordion3">
+									<a data-toggle="collapse" href="#collapseAbout2" class="collapsed" data-parent="#accordion3">
 									How often should I rotate my tires? 
 									<span class="indicator"><i class="fa fa-plus"></i></span>
 									</a>
 								</h4>
 							</div>
-							<div id="collapseTwo3" class="acod-body collapse">
+							<div id="collapseAbout2" class="acod-body collapse">
 								<div class="acod-content p-a15">Graphic design lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised sheets containing Lorem Ipsum passagese.</div>
 							</div>
 						</div>
@@ -179,13 +179,13 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 						<div class="panel wt-panel">
 							<div class="acod-head">
 								<h4 class="acod-title">
-									<a data-toggle="collapse" href="#collapseThree3" class="collapsed" data-parent="#accordion3">
+									<a data-toggle="collapse" href="#collapseAbout3" class="collapsed" data-parent="#accordion3">
 										What will happen if I don't have the repairs done right now? 
 										<span class="indicator"><i class="fa fa-plus"></i></span>
 									</a>
 								</h4>
 							</div>
-							<div id="collapseThree3" class="acod-body collapse">
+							<div id="collapseAbout3" class="acod-body collapse">
 								<div class="acod-content p-a15">Developement lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised sheets containing Lorem Ipsum passagese.</div>
 							</div>
 						</div>
@@ -193,13 +193,13 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 						<div class="panel wt-panel">
 							<div class="acod-head">
 								<h4 class="acod-title">
-									<a data-toggle="collapse" href="#collapseFour3" class="collapsed" data-parent="#accordion3">
+									<a data-toggle="collapse" href="#collapseAbout4" class="collapsed" data-parent="#accordion3">
 										If you don't have a part in stock, how long will it take to order? 
 										<span class="indicator"><i class="fa fa-plus"></i></span>
 									</a>
 								</h4>
 							</div>
-							<div id="collapseFour3" class="acod-body collapse">
+							<div id="collapseAbout4" class="acod-body collapse">
 								<div class="acod-content p-a15">Graphic design lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised sheets containing Lorem Ipsum passagese.</div>
 							</div>
 						</div>
