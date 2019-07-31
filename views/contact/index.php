@@ -16,8 +16,13 @@ use yii\helpers\Url;
 use themes\carservx\assets\ThemePluginAsset;
 
 $themeAsset = ThemePluginAsset::register($this);
-$this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyCqwdZHU6gzIhPBEB2VNbIydp4coZmNPy0&callback=initMap', ['depends' => [ThemePluginAsset::className()]]);
+$this->registerJsFile('https://maps.googleapis.com/maps/api/js?key=AIzaSyBe0RCo4fOUaDr412OzLvKt0KInk0CtUsw&callback=initMap', ['depends' => [ThemePluginAsset::className()]]);
 $this->registerJsFile($themeAsset->baseUrl . '/js/map.script.js', ['depends' => [ThemePluginAsset::className()]]);
+$js = <<<JS
+	var mapsLatitude = '48.8583698';
+	var mapsLongitude = '2.2944833000000244';
+JS;
+$this->registerJs($js, \app\components\View::POS_HEAD);
 ?>
 
 <div class="row">
