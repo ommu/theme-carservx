@@ -17,7 +17,7 @@ use yii\helpers\Url;
 $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 ?>
 
-<?php //begin.about us one
+<?php //begin.about us two
 echo \themes\carservx\components\HomeAboutUs::widget([
 	'layout' => 'one',
 	'bgClass' => 'bg-gray',
@@ -30,11 +30,9 @@ echo \themes\carservx\components\HomeAboutUs::widget([
 ]); ?>
 
 <?php //begin.portfolio counter
-echo \themes\carservx\components\HomePortfolioCounter::widget([
-	'withBackground' => false,
-]); ?>
+echo \themes\carservx\components\HomePortfolioCounter::widget(); ?>
 
-<?php //begin.about us two
+<?php //begin.about us one
 echo \themes\carservx\components\HomeAboutUs::widget([
 	'layout' => 'two',
 	'bgClass' => 'bg-gray',
