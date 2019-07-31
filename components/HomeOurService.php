@@ -59,6 +59,8 @@ class HomeOurService extends \yii\base\Widget
 			$render = 'home_our_service_two';
 		else if($this->layout == 'three')
 			$render = 'home_our_service_three';
+		else if($this->layout == 'four')
+			$render = 'home_our_service_four';
 
 		return $this->render($render);
 	}

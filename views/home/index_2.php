@@ -246,7 +246,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-2.js', ['depends' =
 
 <?php //begin.about us
 echo \themes\carservx\components\HomeAboutUs::widget([
-	'layout' => 'two',
+	'layout' => 'one',
 ]); ?>
 
 <?php //begin.our services

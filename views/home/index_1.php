@@ -171,7 +171,7 @@ $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-1.js', ['depends' =
 
 <?php //begin.about us
 echo \themes\carservx\components\HomeAboutUs::widget([
-	'layout' => 'one',
+	'layout' => 'two',
 ]); ?>
 
 <?php //begin.portfolio counter
