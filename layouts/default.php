@@ -14,17 +14,17 @@ $dir = Yii::$app->request->get('dir') ? Yii::$app->request->get('dir') : 'ltr';
 $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 
 if($this->subLayout == 'default' || $this->subLayout == 'skin1')
-	$this->registerCssFile($themeAsset->baseUrl . '/css/skin/skin-1.css', ['depends' => [ThemeAsset::className()]]);
+	$this->registerCssFile($themeAsset->baseUrl . '/css/skin/skin-1.css', ['depends' => [ThemeAsset::className()], 'class'=>'skin']);
 else if($this->subLayout == 'skin2')
-	$this->registerCssFile($themeAsset->baseUrl . '/css/skin/skin-2.css', ['depends' => [ThemeAsset::className()]]);
+	$this->registerCssFile($themeAsset->baseUrl . '/css/skin/skin-2.css', ['depends' => [ThemeAsset::className()], 'class'=>'skin']);
 else if($this->subLayout == 'skin3')
-	$this->registerCssFile($themeAsset->baseUrl . '/css/skin/skin-3.css', ['depends' => [ThemeAsset::className()]]);
+	$this->registerCssFile($themeAsset->baseUrl . '/css/skin/skin-3.css', ['depends' => [ThemeAsset::className()], 'class'=>'skin']);
 else if($this->subLayout == 'skin4')
-	$this->registerCssFile($themeAsset->baseUrl . '/css/skin/skin-4.css', ['depends' => [ThemeAsset::className()]]);
+	$this->registerCssFile($themeAsset->baseUrl . '/css/skin/skin-4.css', ['depends' => [ThemeAsset::className()], 'class'=>'skin']);
 else if($this->subLayout == 'skin5')
-	$this->registerCssFile($themeAsset->baseUrl . '/css/skin/skin-5.css', ['depends' => [ThemeAsset::className()]]);
+	$this->registerCssFile($themeAsset->baseUrl . '/css/skin/skin-5.css', ['depends' => [ThemeAsset::className()], 'class'=>'skin']);
 else if($this->subLayout == 'skin6')
-	$this->registerCssFile($themeAsset->baseUrl . '/css/skin/skin-65.css', ['depends' => [ThemeAsset::className()]]);
+	$this->registerCssFile($themeAsset->baseUrl . '/css/skin/skin-65.css', ['depends' => [ThemeAsset::className()], 'class'=>'skin']);
 
 $this->beginPage();?>
 <!DOCTYPE html>
