@@ -20,7 +20,7 @@ theme_setting:
 
 theme_menu:
   - label: Home
-    url: ['/#']
+    url: ['/carservx-home/index']
     icon: 
     items: 
     - label: Home 1
@@ -36,7 +36,7 @@ theme_menu:
       url: ['/carservx-home/index-4']
       icon: 
   - label: Portfolio
-    url: ['/#']
+    url: ['/carservx-portfolio/index']
     icon: 
     items: 
     - label: Portfolio 1
@@ -52,7 +52,7 @@ theme_menu:
       url: ['/carservx-portfolio/detail']
       icon: 
   - label: Pages
-    url: ['/#']
+    url: ['/carservx-page/about']
     icon: 
     items: 
       - label: About Us
@@ -65,7 +65,7 @@ theme_menu:
         url: ['/carservx-page/faq']
         icon: 
   - label: Services
-    url: ['/#']
+    url: ['/carservx-service/index']
     icon: 
     items: 
       - label: All Services
@@ -102,7 +102,7 @@ theme_menu:
           content: tire-and-wheel-services
         icon: 
   - label: Blog
-    url: ['/#']
+    url: ['/carservx-blog/grid']
     icon: 
     items: 
       - label: Blog Grid
