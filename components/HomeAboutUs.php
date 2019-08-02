@@ -8,31 +8,39 @@ class HomeAboutUs extends \yii\base\Widget
 	public $paddingTop = true;
 	public $paddingBottom = true;
 
-	public $content = [
-		[
-			'title' => 'International Standards',
-			'intro' => 'It is a long established fact that a reader will be distracted by the readable contentof a page.',
-			'icon' => 'certificate',
-			'image' => 'demo/images/info/pic1.jpg',
-			'url' => '/carservx-blog/detail',
-		],
-		[
-			'title' => 'We love our client',
-			'intro' => 'It is a long established fact that a reader will be distracted by the readable contentof a page.',
-			'icon' => 'employee',
-			'image' => 'demo/images/info/pic2.jpg',
-			'url' => '/carservx-blog/detail',
-		],
-		[
-			'title' => 'Only original parts',
-			'intro' => 'It is a long established fact that a reader will be distracted by the readable contentof a page.',
-			'icon' => 'car-parts',
-			'image' => 'demo/images/info/pic3.jpg',
-			'url' => '/carservx-blog/detail',
-		],
-	];
+	public $content;
 
-	public function run() {
+	public function init()
+	{
+		if(!$this->content) {
+			$this->content = [
+				[
+					'title' => 'International Standards',
+					'intro' => 'It is a long established fact that a reader will be distracted by the readable contentof a page.',
+					'icon' => 'certificate',
+					'image' => 'demo/images/info/pic1.jpg',
+					'url' => '/carservx-blog/detail',
+				],
+				[
+					'title' => 'We love our client',
+					'intro' => 'It is a long established fact that a reader will be distracted by the readable contentof a page.',
+					'icon' => 'employee',
+					'image' => 'demo/images/info/pic2.jpg',
+					'url' => '/carservx-blog/detail',
+				],
+				[
+					'title' => 'Only original parts',
+					'intro' => 'It is a long established fact that a reader will be distracted by the readable contentof a page.',
+					'icon' => 'car-parts',
+					'image' => 'demo/images/info/pic3.jpg',
+					'url' => '/carservx-blog/detail',
+				],
+			];
+		}
+	}
+
+	public function run() 
+	{
 		$render = 'home_about_layout_one';
 
 		if($this->layout == 'one')

@@ -31,7 +31,7 @@ $context = $this->context;
 			$i = 0;
 			foreach ($context->content as $key => $val) {
 				$i++;
-				$url = !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : Url::to([$val['url']]);?>
+				$url = !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : (is_array($val['url']) ? Url::to($val['url']) : Url::to([$val['url']]));?>
 			<div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-xs-100pc bgcall-block">
 				<div class="bg-content-mid-outer">
 					<div class="bg-content-mid">

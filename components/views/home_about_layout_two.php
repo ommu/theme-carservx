@@ -28,7 +28,8 @@ $context = $this->context;
 				$count = count($context->content);
 				$i = 0;
 				foreach ($context->content as $key => $val) {
-					$i++;?>
+					$i++;
+					$url = !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : (is_array($val['url']) ? Url::to($val['url']) : Url::to([$val['url']])); ?>
 				<div class="col-md-4 <?php echo $i == $count ? 'col-sm-12' : 'col-sm-6';?>">
 					<div class="wt-icon-box-wraper p-a30 m-b30 bdr-1 bdr-solid bdr-gray bounce-right-animation">
 						<div class="relative icon-count-1">
@@ -41,7 +42,7 @@ $context = $this->context;
 								<span class="icon-cell"><i class="flaticon-<?php echo $val['icon'];?>"></i></span>
 							</div>
 							<div>
-								<a href="<?php echo !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : Url::to([$val['url']]);?>" title="<?php echo $val['title'];?>" class="site-button site-btn-effect" data-hover="Read More">Read More</a>
+								<a href="<?php echo $url;?>" title="<?php echo $val['title'];?>" class="site-button site-btn-effect" data-hover="Read More">Read More</a>
 							</div>
 						</div>
 					</div>

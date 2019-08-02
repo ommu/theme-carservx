@@ -22,7 +22,7 @@ by injected humour, or randomised words which don't look even slightly believabl
 			</div>
 			<div class="row">
 				<?php foreach ($context->content as $key => $val) {
-					$url = !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : Url::to([$val['url']]);?>
+					$url = !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : (is_array($val['url']) ? Url::to($val['url']) : Url::to([$val['url']]));?>
 				<div class="col-md-4 col-sm-4">
 					<div class="wt-box m-b30">
 						<div class="wt-media">

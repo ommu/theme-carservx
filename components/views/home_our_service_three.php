@@ -29,7 +29,7 @@ $context = $this->context;
 		<div class="container">
 			<div class="owl-carousel services_home owl-btn-bottom-center services-half-section-bottom">
 				<?php foreach ($context->content as $key => $val) {
-					$url = !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : Url::to([$val['url']]);?>
+					$url = !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : (is_array($val['url']) ? Url::to($val['url']) : Url::to([$val['url']]));?>
 				<div class="item">
 					<div class="wt-box">
 						<div class="wt-media">

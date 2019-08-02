@@ -8,7 +8,7 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use themes\carservx\assets\ThemePluginAsset;
 
-$themeAsset = \themes\carservx\assets\ThemeAsset::register($this);
+$themeAsset = ThemePluginAsset::register($this);
 \themes\carservx\assets\RevolutionSliderPluginAsset::register($this);
 $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-3.js', ['depends' => [ThemePluginAsset::className()]]);
 $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;

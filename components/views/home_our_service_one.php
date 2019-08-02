@@ -56,7 +56,7 @@ $context = $this->context;
 						$i = 0;
 						foreach ($context->content as $key => $val) {
 							$i++;
-							$url = !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : Url::to([$val['url']]);?>
+							$url = !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : (is_array($val['url']) ? Url::to($val['url']) : Url::to([$val['url']]));?>
 						<div id="<?php echo Inflector::slug(Inflector::singularize($val['title']));?>" class="tab-pane <?php echo $i == 1 ? 'active' : '';?>">
 							<div class="wt-box">
 								<div class="wt-thum-bx wt-img-effect zoom">

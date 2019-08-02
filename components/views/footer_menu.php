@@ -17,7 +17,7 @@ $context = $this->context;
 		<h4 class="widget-title">links</h4>
 		<ul>
 			<?php foreach ($context->menus as $key => $val) {
-				$url = !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : Url::to([$val['url']]);?>
+				$url = !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : (is_array($val['url']) ? Url::to($val['url']) : Url::to([$val['url']]));?>
 			<li><a href="<?php echo $url;?>" title="<?php echo $val['title'];?>"><?php echo $val['title'];?></a></li>
 			<?php }?>
 		</ul>

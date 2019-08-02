@@ -29,11 +29,12 @@ $context = $this->context;
 				$i = 0;
 				foreach ($context->content as $key => $val) {
 					$i++;
+					$url = !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : (is_array($val['url']) ? Url::to($val['url']) : Url::to([$val['url']]));
 				if($context->isPotraitLayout) {?>
 				<div class="col-md-4 <?php echo $i == $count ? 'col-sm-12' : 'col-sm-6';?>">
 					<div class="blog-post latest-blog-1 date-style-1">
 						<div class="wt-post-media wt-img-effect zoom-slow">
-							<a href="javascript:;"><img src="<?php echo join('/', [$themeAsset->baseUrl, $val['image']]) ?>" alt="<?php echo $val['title'];?>"></a>
+							<a href="javascript:;"><img src="<?php echo join('/', [$themeAsset->baseUrl, $val['image']]); ?>" alt="<?php echo $val['title'];?>"></a>
 						</div>
 						<div class="wt-post-info">
 							<div class="wt-post-meta ">
@@ -50,7 +51,7 @@ $context = $this->context;
 								<p><?php echo $val['intro'];?></p>
 							</div>
 							<div class="wt-post-readmore">
-								<a href="<?php echo !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : Url::to([$val['url']]);?>" title="<?php echo $val['title'];?>" class="site-button-link text-primary">Read More</a>
+								<a href="<?php echo $url;?>" title="<?php echo $val['title'];?>" class="site-button-link text-primary">Read More</a>
 							</div>
 						</div>
 					</div>
@@ -73,7 +74,7 @@ $context = $this->context;
 								<h4 class="post-title"><?php echo $val['title'];?></h4>
 							</div>
 							<div class="wt-post-readmore">
-								<a href="<?php echo !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : Url::to([$val['url']]);?>" title="<?php echo $val['title'];?>" class="text-primary site-button-link">Read More</a>
+								<a href="<?php echo $url;?>" title="<?php echo $val['title'];?>" class="text-primary site-button-link">Read More</a>
 							</div>
 						</div>
 					</div>

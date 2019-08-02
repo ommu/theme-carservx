@@ -30,9 +30,10 @@ $context = $this->context;
 				$count = count($context->content);
 				$i = 0;
 				foreach ($context->content as $key => $val) {
-					$i++;?>
+					$i++;
+					$url = !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : (is_array($val['url']) ? Url::to($val['url']) : Url::to([$val['url']])); ?>
 				<div class="col-md-4 <?php echo $i == $count ? 'col-sm-12' : 'col-sm-6';?>">
-					<div class="wt-icon-box-wraper p-a30 text-white bg-no-repeat bg-cover overlay-wraper m-b30 bg-dark-section-hover v-icon-effect" style="background-image:url(<?php echo join('/', [$themeAsset->baseUrl, $val['image']]) ?>);">
+					<div class="wt-icon-box-wraper p-a30 text-white bg-no-repeat bg-cover overlay-wraper m-b30 bg-dark-section-hover v-icon-effect" style="background-image:url(<?php echo join('/', [$themeAsset->baseUrl, $val['image']]); ?>);">
 						<div class="overlay-main bg-black opacity-07"></div>
 						<div class="relative icon-count-1">
 							<span class="icon-count-number"><?php echo str_pad($i, 2, '0', STR_PAD_LEFT);?></span>
@@ -42,7 +43,7 @@ $context = $this->context;
 							<div class="icon-content text-black">
 								<h4 class="wt-tilte m-b25"><?php echo $val['title'];?></h4>
 								<p><?php echo $val['intro'];?></p>
-								<a href="<?php echo !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : Url::to([$val['url']]);?>" title="<?php echo $val['title'];?>" class="site-button site-btn-effect" data-hover="Read More">Read More</a>
+								<a href="<?php echo $url;?>" title="<?php echo $val['title'];?>" class="site-button site-btn-effect" data-hover="Read More">Read More</a>
 							</div>
 						</div>
 					</div>
