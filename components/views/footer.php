@@ -12,7 +12,7 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 $context = $this->context;
 ?>
 
-<footer class="site-footer footer-large footer-wide text-white bg-cover" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/background/bg-3.jpg)">
+<footer class="site-footer footer-large footer-wide text-white <?php echo $context->withBackground ? 'bg-cover' : 'footer-dark';?>" <?php echo $context->withBackground ? 'style="background-image:url('.$themeAsset->baseUrl.'/demo/images/background/bg-3.jpg)"' : '';?>>
 	<div class="footer-top overlay-wraper ">
 		<div class="overlay-main bg-secondry opacity-09"></div>
 		<div class="container">
