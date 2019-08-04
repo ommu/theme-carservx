@@ -21,7 +21,12 @@ class Footer extends \yii\base\Widget
 		}
 	}
 
-	public function run() {
-		return $this->render('footer');
+	public function run() 
+	{
+		$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+
+		return $this->render('footer', [
+			'isDemoTheme' => $isDemoTheme,
+		]);
 	}
 }

@@ -1,6 +1,8 @@
 <?php
 namespace themes\carservx\components;
 
+use Yii;
+
 class HomeLatestNews extends \yii\base\Widget
 {
 	public $isPotraitLayout = true;
@@ -50,6 +52,10 @@ class HomeLatestNews extends \yii\base\Widget
 
 	public function run() 
 	{
-		return $this->render('home_latest_news');
+		$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+
+		return $this->render('home_latest_news', [
+			'isDemoTheme' => $isDemoTheme,
+		]);
 	}
 }

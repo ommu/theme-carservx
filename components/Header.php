@@ -63,7 +63,12 @@ class Header extends \yii\base\Widget
 		$this->menus = ArrayHelper::merge($this->menus, $menus);
 	}
 
-	public function run() {
-		return $this->render('header');
+	public function run() 
+	{
+		$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+
+		return $this->render('header', [
+			'isDemoTheme' => $isDemoTheme,
+		]);
 	}
 }

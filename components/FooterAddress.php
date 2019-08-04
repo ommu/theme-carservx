@@ -44,7 +44,12 @@ class FooterAddress extends \yii\base\Widget
 		}
 	}
 
-	public function run() {
-		return $this->render('footer_address');
+	public function run() 
+	{
+		$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+
+		return $this->render('footer_address', [
+			'isDemoTheme' => $isDemoTheme,
+		]);
 	}
 }

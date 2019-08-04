@@ -8,18 +8,22 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 
 $themeAsset = \themes\carservx\assets\ThemeAsset::register($this);
-$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 $context = $this->context;
-?>
+
+$title = $intro = $context->title[0];
+if(count($context->title) > 1) {
+	$title = $context->title[0];
+	$intro = $context->title[1];
+} ?>
 
 <div class="section-full small-device <?php echo $context->paddingTop ? 'p-t80' : '';?> <?php echo $context->paddingBottom ? 'p-b50' : '';?> <?php echo $context->bgClass;?>">
 	<div class="section-content">
 		<div class="container">
 			<?php //begin.title ?>
 			<div class="section-head text-center">
-				<h5 class="text-primary text-uppercase wt-title-small">About Company</h5>
-				<h2 class="m-b5 left">We're a company of talented engineers <br> & mechanics</h2>
-				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+				<h5 class="text-primary text-uppercase wt-title-small"><?php echo $title;?></h5>
+				<h2 class="m-b5 left"><?php echo $intro;?></h2>
+				<p><?php echo $context->description;?></p>
 			</div>
 			<?php //end.title ?>
 			<?php //begin.content ?>

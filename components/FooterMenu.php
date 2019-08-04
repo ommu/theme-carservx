@@ -1,6 +1,8 @@
 <?php
 namespace themes\carservx\components;
 
+use Yii;
+
 class FooterMenu extends \yii\base\Widget
 {
 	public $menus = [
@@ -26,7 +28,12 @@ class FooterMenu extends \yii\base\Widget
 		],
 	];
 
-	public function run() {
-		return $this->render('footer_menu');
+	public function run() 
+	{
+		$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+
+		return $this->render('footer_menu', [
+			'isDemoTheme' => $isDemoTheme,
+		]);
 	}
 }

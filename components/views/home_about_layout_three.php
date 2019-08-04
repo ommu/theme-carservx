@@ -8,18 +8,23 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 
 $themeAsset = \themes\carservx\assets\ThemeAsset::register($this);
-$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+$imageUrl = $isDemoTheme ? $themeAsset->baseUrl : Url::to('@webpublic');
 $context = $this->context;
-?>
+
+$title = $intro = $context->title[0];
+if(count($context->title) > 1) {
+	$title = $context->title[0];
+	$intro = $context->title[1];
+} ?>
 
 <div class="section-full <?php echo $context->paddingTop ? 'p-t80' : '';?> <?php echo $context->paddingBottom ? 'p-b50' : '';?> <?php echo $context->bgClass;?>">
 	<div class="section-content">
 		<div class="container">
 			<?php //begin.title ?>
 			<div class="section-head text-center">
-				<h5 class="text-primary text-uppercase wt-title-small">About us</h5>
-				<h2 class="m-b5 center">We're a company of talented engineers & mechanics</h2>
-				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+				<h5 class="text-primary text-uppercase wt-title-small"><?php echo $title;?></h5>
+				<h2 class="m-b5 center"><?php echo $intro;?></h2>
+				<p><?php echo $context->description;?></p>
 			</div>
 			<?php //end.title ?>
 		</div>
@@ -33,7 +38,7 @@ $context = $this->context;
 					$i++;
 					$url = !$val['url'] || ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : (is_array($val['url']) ? Url::to($val['url']) : Url::to([$val['url']])); ?>
 				<div class="col-md-4 <?php echo $i == $count ? 'col-sm-12' : 'col-sm-6';?>">
-					<div class="wt-icon-box-wraper p-a30 text-white bg-no-repeat bg-cover overlay-wraper m-b30 bg-dark-section-hover v-icon-effect" style="background-image:url(<?php echo join('/', [$themeAsset->baseUrl, $val['image']]); ?>);">
+					<div class="wt-icon-box-wraper p-a30 text-white bg-no-repeat bg-cover overlay-wraper m-b30 bg-dark-section-hover v-icon-effect" style="background-image:url(<?php echo join('/', [$imageUrl, $val['image']]); ?>);">
 						<div class="overlay-main bg-black opacity-07"></div>
 						<div class="relative icon-count-1">
 							<span class="icon-count-number"><?php echo str_pad($i, 2, '0', STR_PAD_LEFT);?></span>

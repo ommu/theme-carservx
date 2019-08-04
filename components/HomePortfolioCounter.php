@@ -1,6 +1,8 @@
 <?php
 namespace themes\carservx\components;
 
+use Yii;
+
 class HomePortfolioCounter extends \yii\base\Widget
 {
 	public $withBackground = false;
@@ -31,7 +33,10 @@ class HomePortfolioCounter extends \yii\base\Widget
 		],
 	];
 
-	public function run() {
+	public function run() 
+	{
+		$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+
 		$render = 'home_portfolio_counter';
 
 		if($this->withBackground)
@@ -39,6 +44,8 @@ class HomePortfolioCounter extends \yii\base\Widget
 		else
 			$render = 'home_portfolio_counter';
 
-		return $this->render($render);
+		return $this->render($render, [
+			'isDemoTheme' => $isDemoTheme,
+		]);
 	}
 }

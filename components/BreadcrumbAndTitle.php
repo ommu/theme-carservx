@@ -1,6 +1,8 @@
 <?php
 namespace themes\carservx\components;
 
+use Yii;
+
 class BreadcrumbAndTitle extends \yii\base\Widget
 {
 	public $banners = [
@@ -12,7 +14,12 @@ class BreadcrumbAndTitle extends \yii\base\Widget
 		'demo/images/banner/6.jpg',
 	];
 
-	public function run() {
-		return $this->render('breadcrumb_and_title');
+	public function run() 
+	{
+		$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+
+		return $this->render('breadcrumb_and_title', [
+			'isDemoTheme' => $isDemoTheme,
+		]);
 	}
 }

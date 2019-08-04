@@ -1,6 +1,8 @@
 <?php
 namespace themes\carservx\components;
 
+use Yii;
+
 class HomeOurService extends \yii\base\Widget
 {
 	public $layout = 'one';
@@ -59,6 +61,8 @@ class HomeOurService extends \yii\base\Widget
 
 	public function run() 
 	{
+		$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+
 		$render = 'home_our_service_one';
 
 		if($this->layout == 'one')
@@ -70,6 +74,8 @@ class HomeOurService extends \yii\base\Widget
 		else if($this->layout == 'four')
 			$render = 'home_our_service_four';
 
-		return $this->render($render);
+		return $this->render($render, [
+			'isDemoTheme' => $isDemoTheme,
+		]);
 	}
 }

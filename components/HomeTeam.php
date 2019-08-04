@@ -1,6 +1,8 @@
 <?php
 namespace themes\carservx\components;
 
+use Yii;
+
 class HomeTeam extends \yii\base\Widget
 {
 	public $withTestimony = false;
@@ -10,7 +12,10 @@ class HomeTeam extends \yii\base\Widget
 	public $paddingTop = true;
 	public $paddingBottom = true;
 
-	public function run() {
+	public function run() 
+	{
+		$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+
 		$render = 'home_team';
 
 		if($this->withTestimony)
@@ -19,6 +24,8 @@ class HomeTeam extends \yii\base\Widget
 			$render = 'home_team';
 		}
 
-		return $this->render($render);
+		return $this->render($render, [
+			'isDemoTheme' => $isDemoTheme,
+		]);
 	}
 }

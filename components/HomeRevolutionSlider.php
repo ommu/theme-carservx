@@ -1,6 +1,9 @@
 <?php
 namespace themes\carservx\components;
 
+use Yii;
+use yii\helpers\ArrayHelper;
+
 class HomeRevolutionSlider extends \yii\base\Widget
 {
 	public $layout = 'one';
@@ -30,10 +33,19 @@ class HomeRevolutionSlider extends \yii\base\Widget
 					'url' => '/carservx-blog/detail',
 				],
 			];
+
+			if($this->layout === 'two') {
+				ArrayHelper::setValue($this->content, '0.title', 'Save in our Hands');
+				ArrayHelper::setValue($this->content, '1.title', 'Save in our Hands');
+				ArrayHelper::setValue($this->content, '2.title', 'Save in our Hands');
+			}
 		}
 	}
 
-	public function run() {
+	public function run() 
+	{
+		$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+
 		$render = 'home_revolution_slider_one';
 
 		if($this->layout == 'one')
@@ -45,6 +57,8 @@ class HomeRevolutionSlider extends \yii\base\Widget
 		else if($this->layout == 'four')
 			$render = 'home_revolution_slider_four';
 
-		return $this->render($render);
+		return $this->render($render, [
+			'isDemoTheme' => $isDemoTheme,
+		]);
 	}
 }
