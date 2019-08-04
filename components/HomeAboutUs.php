@@ -124,7 +124,6 @@ class HomeAboutUs extends \yii\base\Widget
 		}
 
 		$this->title = explode('#', $this->title);
-		print_r($this);
 
 		$render = 'home_about_layout_one';
 
