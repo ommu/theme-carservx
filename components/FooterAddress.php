@@ -8,9 +8,21 @@ use ommu\core\models\CoreZoneCountry;
 
 class FooterAddress extends \yii\base\Widget
 {
-	public $address = '92 Princess Road, parkvenue,Greater London, NW18JR, United Kingdom';
-	public $email = 'carservxdemo@gmail.com';
-	public $phone = '(+0091) 912-3456-073';
+	public $address;
+	public $email;
+	public $phone;
+
+	public function init()
+	{
+		if(!$this->address)
+			$this->address = '92 Princess Road, parkvenue,Greater London, NW18JR, United Kingdom';
+
+		if(!$this->email)
+			$this->email = 'carservxdemo@gmail.com';
+
+		if(!$this->phone)
+			$this->phone = '(+0091) 912-3456-073';
+	}
 
 	public function getAdressStatus($address): bool
 	{
@@ -32,9 +44,11 @@ class FooterAddress extends \yii\base\Widget
 		return join(', ', $address);
 	}
 
-	public function init()
+	public function run() 
 	{
-		if(!Yii::$app->isDemoTheme()) {
+		$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+
+		if(!$isDemoTheme) {
 			$office_address = unserialize(Yii::$app->meta->get(join('_', [Yii::$app->id, 'office_address'])));
 			$office_contact = unserialize(Yii::$app->meta->get(join('_', [Yii::$app->id, 'office_contact'])));
 
@@ -42,11 +56,6 @@ class FooterAddress extends \yii\base\Widget
 			$this->email = $office_contact['email'] ? Yii::$app->formatter->asEmail($office_contact['email']) : '';
 			$this->phone = $office_contact['phone'] ? $office_contact['phone'] : '';
 		}
-	}
-
-	public function run() 
-	{
-		$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 
 		return $this->render('footer_address', [
 			'isDemoTheme' => $isDemoTheme,

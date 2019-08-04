@@ -8,7 +8,7 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 
 $themeAsset = \themes\carservx\assets\ThemeAsset::register($this);
-$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+$context = $this->context;
 ?>
 
 <div class="col-lg-5 col-md-5 col-sm-4">

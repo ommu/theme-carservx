@@ -8,12 +8,17 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 
 $themeAsset = \themes\carservx\assets\ThemeAsset::register($this);
-$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
-?>
+$context = $this->context;
 
-<div class="section-full">
+$title = $intro = $context->title[0];
+if(count($context->title) > 1) {
+	$title = $context->title[0];
+	$intro = $context->title[1];
+} ?>
+
+<div class="section-full <?php echo $context->paddingTop ? 'p-t80' : '';?>">
+	<?php if($youtubeStatus) {?>
 	<div class="container">
-
 		<div class="video-section-dark overlay-wraper">
 			<div class="overlay-main bg-black opacity-05"></div>
 			<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/video-pic.png" alt="">
@@ -22,8 +27,9 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 				<span class="ripple"></span>
 			</a>
 		</div>
-
 	</div>
+	<?php }?>
+
 	<div class="container-fluid bg-cover overlay-wraper bg-bottom-center bg-no-repeat" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/background/bg-1.jpg);">
 		<div class="overlay-main bg-white opacity-09"></div>
 		<div class="row talk-section2-outer p-t80">
@@ -34,9 +40,23 @@ $isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 			</div>
 			<div class="col-md-4 talk-section-mid2">
 				<div class="want-to-talk text-center">
-					<h2 class="m-b5">Want to talk?</h2>
-					<h2 class="text-primary talk-sepr-white">Call:(123) 556 4321</h2>
-					<p>Need a special repair service? we are happy to fulfil every request in order to exceed your expectations</p>
+					<?php if($title != $intro) {?>
+					<h5 class="text-primary text-uppercase wt-title-small"><?php echo $title;?></h5>
+					<?php }?>
+					<h2 class="m-b5"><?php echo $intro;?></h2>
+					<?php $contact = $context->contact;
+					if(!empty($contact)) {
+						$i = 0;
+						foreach ($contact as $key => $val) {
+							$i++;
+							if($i == 1) {?>
+							<h2 class="text-primary talk-sepr-white"><?php echo $key;?>: <?php echo $val;?></h2>
+							<?php } else {?>
+							<h3 class="text-primary"><?php echo $key;?>: <?php echo $val;?></h3>
+					<?php 	}
+						}
+					}?>
+					<p><?php echo $context->description;?></p>
 					<div class="button-lr-line">
 						<a href="#" class="site-button site-btn-effect">Book An Appointment</a>
 					</div>
