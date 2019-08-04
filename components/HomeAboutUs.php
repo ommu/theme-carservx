@@ -88,8 +88,14 @@ class HomeAboutUs extends \yii\base\Widget
 					$params = $this->getQuoteParams($model->quoteRltn->message);
 					if($params['content'])
 						$this->contentId = StringHelper::explode($params['content'], ',');
-					if($params['layout'])
-						$this->layout = $params['layout'];
+					if(!empty($params)) {
+						foreach ($params as $key => $val) {
+							if($key == 'content')
+								continue;
+							if($key != $val)
+								$this->$key = $val;
+						}
+					}
 				}
 			}
 
@@ -127,9 +133,10 @@ class HomeAboutUs extends \yii\base\Widget
 
 		$render = 'home_about_layout_one';
 
-		if($this->layout == 'one')
+		if($this->layout == 'one') {
+			$this->bgClass = 'bg-gray';
 			$render = 'home_about_layout_one';
-		else if($this->layout == 'two')
+		} else if($this->layout == 'two')
 			$render = 'home_about_layout_two';
 		else if($this->layout == 'three')
 			$render = 'home_about_layout_three';
