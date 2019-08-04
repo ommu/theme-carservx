@@ -9,9 +9,14 @@ use yii\helpers\Url;
 
 $themeAsset = \themes\carservx\assets\ThemeAsset::register($this);
 \themes\carservx\assets\OwlCarouselPluginAsset::register($this);
-$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+$imageUrl = $isDemoTheme ? $themeAsset->baseUrl : Url::to('@webpublic');
 $context = $this->context;
-?>
+
+$title = $intro = $context->title[0];
+if(count($context->title) > 1) {
+	$title = $context->title[0];
+	$intro = $context->title[1];
+} ?>
 
 <div class="section-full small-device p-b80">
 	<div class="section-content">
@@ -19,9 +24,9 @@ $context = $this->context;
 			<div class="container">
 				<?php //begin.title ?>
 				<div class="section-head text-center text-white">
-					<h5 class="text-primary text-uppercase wt-title-small">Our Services</h5>
-					<h2 class="m-b5 center">We Provide professional Services</h2>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+					<h5 class="text-primary text-uppercase wt-title-small"><?php echo $title;?></h5>
+					<h2 class="m-b5 center"><?php echo $intro;?></h2>
+					<p><?php echo $context->description;?></p>
 				</div>
 				<?php //end.title ?>
 			</div>
@@ -33,7 +38,7 @@ $context = $this->context;
 				<div class="item">
 					<div class="wt-box">
 						<div class="wt-media">
-							<a href="<?php echo $url;?>" title="<?php echo $val['title'];?>"><img src="<?php echo join('/', [$themeAsset->baseUrl, $val['image']]); ?>" alt="<?php echo $val['title'];?>"></a>
+							<a href="<?php echo $url;?>" title="<?php echo $val['title'];?>"><img src="<?php echo join('/', [$imageUrl, $val['image']]); ?>" alt="<?php echo $val['title'];?>"></a>
 						</div>
 						<div class="wt-info p-a30 bg-gray">
 							<h4 class="wt-title m-t0"><a href="<?php echo $url;?>" title="<?php echo $val['title'];?>"><?php echo $val['title'];?></a></h4>

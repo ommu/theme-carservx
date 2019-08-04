@@ -24,7 +24,7 @@ class HomeAboutUs extends \yii\base\Widget
 	public function init()
 	{
 		if(!$this->title)
-			$this->title = 'We\'re a company of talented engineers & mechanics';
+			$this->title = 'About Company#We\'re a company of talented engineers & mechanics';
 
 		if(!$this->description)
 			$this->description = 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable. ';

@@ -9,9 +9,14 @@ use yii\helpers\Url;
 use yii\helpers\Inflector;
 
 $themeAsset = \themes\carservx\assets\ThemeAsset::register($this);
-$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+$imageUrl = $isDemoTheme ? $themeAsset->baseUrl : Url::to('@webpublic');
 $context = $this->context;
-?>
+
+$title = $intro = $context->title[0];
+if(count($context->title) > 1) {
+	$title = $context->title[0];
+	$intro = $context->title[1];
+} ?>
 
 <div class="section-full small-device best_services_tab_outer overlay-wraper bg-no-repeat bg-cover" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/background/bg-1.jpg);">
 	<div class="overlay-main bg-secondry opacity-09"></div>
@@ -21,8 +26,8 @@ $context = $this->context;
 				<div class="col-md-6 m-b30">
 					<?php //begin.title ?>
 					<div class="section-head">
-						<h5 class="text-primary text-uppercase wt-title-small">Our Services</h5>
-						<h2 class="m-b5 left">We Provide best Services</h2>
+						<h5 class="text-primary text-uppercase wt-title-small"><?php echo $title;?></h5>
+						<h2 class="m-b5 left"><?php echo $intro;?></h2>
 					</div>
 					<?php //end.title ?>
 
@@ -60,7 +65,7 @@ $context = $this->context;
 						<div id="<?php echo Inflector::slug(Inflector::singularize($val['title']));?>" class="tab-pane <?php echo $i == 1 ? 'active' : '';?>">
 							<div class="wt-box">
 								<div class="wt-thum-bx wt-img-effect zoom">
-									<img src="<?php echo join('/', [$themeAsset->baseUrl, $val['image']]); ?>" alt="<?php echo $val['title'];?>">
+									<img src="<?php echo join('/', [$imageUrl, $val['image']]); ?>" alt="<?php echo $val['title'];?>">
 								</div>
 								<div class="wt-info text-white">
 									<h4 class="wt-title m-t20 text-white"><?php echo $val['title'];?></h4>

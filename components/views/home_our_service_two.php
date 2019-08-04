@@ -8,20 +8,24 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 
 $themeAsset = \themes\carservx\assets\ThemeAsset::register($this);
-$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+$imageUrl = $isDemoTheme ? $themeAsset->baseUrl : Url::to('@webpublic');
 $context = $this->context;
-?>
+
+$title = $intro = $context->title[0];
+if(count($context->title) > 1) {
+	$title = $context->title[0];
+	$intro = $context->title[1];
+} ?>
 
 <div class="section-full bg-change-section overlay-wraper" data-toggle="tab-hover">
 	<div class="overlay-main bg-black opacity-06"></div>
 	<?php //begin.background ?>
 	<div class="bg-changer">
-		<div class="section-bg active" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/bg-changes/bg-1.jpg)"></div>
-		<div class="section-bg" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/bg-changes/bg-2.jpg)"></div>
-		<div class="section-bg" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/bg-changes/bg-3.jpg)"></div>
-		<div class="section-bg" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/bg-changes/bg-4.jpg)"></div>
-		<div class="section-bg" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/bg-changes/bg-5.jpg)"></div>
-		<div class="section-bg" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/bg-changes/bg-6.jpg)"></div>
+		<?php $i=0;
+		foreach ($context->content as $key => $val) {
+			$i++;?>
+			<div class="section-bg <?php echo $i == 1 ? 'active' : '';?>" style="background-image:url(<?php echo join('/', [$imageUrl, $val['image']]); ?>)"></div>
+		<?php }?>
 	</div>
 	<?php //end.background ?>
 	<?php //begin.content ?>
