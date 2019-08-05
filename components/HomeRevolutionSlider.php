@@ -8,7 +8,7 @@ class HomeRevolutionSlider extends \yii\base\Widget
 {
 	public $layout = 'one';
 
-	public $content;
+	public $content= [];
 
 	public function init()
 	{

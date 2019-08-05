@@ -7,7 +7,7 @@ class HomeSkill extends \yii\base\Widget
 	public $paddingTop = true;
 	public $paddingBottom = true;
 
-	public $content;
+	public $content= [];
 
 	public function init()
 	{

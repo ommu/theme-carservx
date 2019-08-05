@@ -3,6 +3,7 @@ namespace themes\carservx\components;
 
 use Yii;
 use yii\helpers\StringHelper;
+use yii\helpers\Inflector;
 use ommu\core\models\CorePages;
 
 class HomeOurService extends \yii\base\Widget
@@ -13,7 +14,7 @@ class HomeOurService extends \yii\base\Widget
 
 	public $title;
 	public $description;
-	public $content;
+	public $content= [];
 
 	public $pageId;
 	public $contentId = [];
@@ -137,7 +138,7 @@ class HomeOurService extends \yii\base\Widget
 							'image' => $val->media ? join('/', [$val::getUploadPath(false), $val->media]) : 'default.png',
 							'url' => [
 								'site/view',
-								't' => $val->title->message,
+								't' => Inflector::slug($val->title->message),
 								'id' => $val->page_id,
 							],
 						];

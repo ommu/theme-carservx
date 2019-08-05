@@ -8,6 +8,8 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 
 $themeAsset = \themes\carservx\assets\ThemeAsset::register($this);
+\themes\carservx\assets\MagnificPopupPluginAsset::register($this);
+$imageUrl = $isDemoTheme ? $themeAsset->baseUrl : Url::to('@webpublic');
 $context = $this->context;
 
 $title = $intro = $context->title[0];
@@ -21,17 +23,20 @@ if(count($context->title) > 1) {
 	<div class="container">
 		<div class="video-section-dark overlay-wraper">
 			<div class="overlay-main bg-black opacity-05"></div>
-			<img src="<?php echo $themeAsset->baseUrl ?>/demo/images/video-pic.png" alt="">
-			<a href="https://www.youtube.com/watch?v=qfRw6x5dWdE" class="mfp-video play-now">
+			<img src="<?php echo join('/', [$imageUrl, $context->image]); ?>" alt="">
+			<a href="https://www.youtube.com/watch?v=<?php echo $context->youtube;?>" class="mfp-video play-now">
 				<i class="icon fa fa-play"></i>
 				<span class="ripple"></span>
 			</a>
 		</div>
 	</div>
-	<?php }?>
-
-	<div class="container-fluid bg-cover overlay-wraper bg-bottom-center bg-no-repeat" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/background/bg-1.jpg);">
-		<div class="overlay-main bg-white opacity-09"></div>
+	<?php }
+	
+	$background = join('/', [$themeAsset->baseUrl, 'demo/images/background/bg-1.jpg']);
+	if($context->darkLayout)
+		$background = join('/', [$themeAsset->baseUrl, 'demo/images/background/bg-5.jpg']);?>
+	<div class="container-fluid bg-cover overlay-wraper bg-bottom-center bg-no-repeat" style="background-image:url(<?php echo $background; ?>);">
+		<div class="overlay-main <?php echo $context->darkLayout ? 'bg-secondry opacity-07' : 'bg-white opacity-09';?>"></div>
 		<div class="row talk-section2-outer p-t80">
 			<div class="col-md-4 talk-section-left2">
 				<div class="wt-media">
@@ -43,7 +48,7 @@ if(count($context->title) > 1) {
 					<?php if($title != $intro) {?>
 					<h5 class="text-primary text-uppercase wt-title-small"><?php echo $title;?></h5>
 					<?php }?>
-					<h2 class="m-b5"><?php echo $intro;?></h2>
+					<h2 class="m-b5 <?php echo $context->darkLayout ? 'text-white' : '';?>"><?php echo $intro;?></h2>
 					<?php $contact = $context->contact;
 					if(!empty($contact)) {
 						$i = 0;
@@ -56,7 +61,7 @@ if(count($context->title) > 1) {
 					<?php 	}
 						}
 					}?>
-					<p><?php echo $context->description;?></p>
+					<p <?php echo $context->darkLayout ? 'class="text-white"' : '';?>><?php echo $context->description;?></p>
 					<div class="button-lr-line">
 						<a href="#" class="site-button site-btn-effect">Book An Appointment</a>
 					</div>

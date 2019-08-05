@@ -10,10 +10,13 @@ class HomeContact extends \yii\base\Widget
 {
 	use \ommu\traits\UtilityTrait;
 
+	public $darkLayout = false;
 	public $paddingTop = true;
+	public $withChooseUs = false;
 
 	public $title;
 	public $description;
+	public $image;
 	public $youtube;
 	public $contact = [];
 
@@ -26,6 +29,9 @@ class HomeContact extends \yii\base\Widget
 
 		if(!$this->description)
 			$this->description = 'Need a special repair service? we are happy to fulfil every request in order to exceed your expectations';
+
+		if(!$this->image)
+			$this->image = 'demo/images/video-pic.png';
 
 		if(!$this->youtube)
 			$this->youtube = 'qfRw6x5dWdE';
@@ -62,6 +68,7 @@ class HomeContact extends \yii\base\Widget
 				if($model) {
 					$this->title = $model->title->message;
 					$this->description = self::htmlHardDecode($model->description->message);
+					$this->image = $model->media ? join('/', [$model::getUploadPath(false), $model->media]) : 'default.png';
 
 					$params = $this->getQuoteParams($model->quoteRltn->message);
 					if(array_key_exists('youtube', $params)) {
@@ -92,7 +99,14 @@ class HomeContact extends \yii\base\Widget
 
 		$this->title = explode('#', $this->title);
 
-		return $this->render('home_contact', [
+		$render = 'home_contact';
+
+		if($this->withChooseUs)
+			$render = 'home_contact_with_choose_us';
+		else
+			$render = 'home_contact';
+
+		return $this->render($render, [
 			'isDemoTheme' => $isDemoTheme,
 			'youtubeStatus' => $this->youtube ? true : false,
 		]);
