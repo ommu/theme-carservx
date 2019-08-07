@@ -25,7 +25,6 @@ class ThemePreviewPluginAsset extends \yii\web\AssetBundle
 			'assets/',
 			'components/',
 			'controllers/',
-			'fonts/',
 			'layouts/',
 			'modules/',
 			'site/',
