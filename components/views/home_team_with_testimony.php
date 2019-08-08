@@ -9,7 +9,6 @@ use yii\helpers\Url;
 
 $themeAsset = \themes\carservx\assets\ThemeAsset::register($this);
 \themes\carservx\assets\OwlCarouselPluginAsset::register($this);
-$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 ?>
 
 <div class="col-md-6 col-sm-6 half-section-outer-right bg-cover overlay-wraper" style="background-image:url(<?php echo $themeAsset->baseUrl ?>/demo/images/background/offer.jpg);">

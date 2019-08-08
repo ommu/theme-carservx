@@ -8,8 +8,8 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 
 $themeAsset = \themes\carservx\assets\ThemeAsset::register($this);
-$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 $context = $this->context;
+
 $rand_keys = array_rand($context->banners, 1);
 $randomBanner = $context->banners[$rand_keys];
 ?>

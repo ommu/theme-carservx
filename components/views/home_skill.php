@@ -10,7 +10,6 @@ use yii\helpers\Url;
 $themeAsset = \themes\carservx\assets\ThemeAsset::register($this);
 \themes\carservx\assets\MagnificPopupPluginAsset::register($this);
 \themes\carservx\assets\StellarPluginAsset::register($this);
-$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 $context = $this->context;
 $content = $context->content;
 ?>

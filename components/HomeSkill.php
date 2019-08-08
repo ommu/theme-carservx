@@ -49,6 +49,10 @@ class HomeSkill extends \yii\base\Widget
 
 	public function run()
 	{
-		return $this->render('home_skill');
+		$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+
+		return $this->render('home_skill', [
+			'isDemoTheme' => $isDemoTheme,
+		]);
 	}
 }
