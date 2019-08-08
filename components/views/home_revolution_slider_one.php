@@ -12,8 +12,8 @@ use themes\carservx\assets\ThemePluginAsset;
 $themeAsset = ThemePluginAsset::register($this);
 \themes\carservx\assets\RevolutionSliderPluginAsset::register($this);
 $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-1.js', ['depends' => [ThemePluginAsset::className()]]);
-$imageUrl = $isDemoTheme ? $themeAsset->baseUrl : Url::to('@webpublic');
 $context = $this->context;
+$imageUrl = ($isDemoTheme || (!$isDemoTheme && $context->overwriteContent)) ? $themeAsset->baseUrl : Url::to('@webpublic');
 ?>
 
 <div id="welcome_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="goodnews-header" data-source="gallery" style="background:#eeeeee;padding:0px;">

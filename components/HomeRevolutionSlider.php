@@ -12,6 +12,7 @@ class HomeRevolutionSlider extends \yii\base\Widget
 	use \ommu\traits\UtilityTrait;
 
 	public $layout = 'one';
+	public $overwriteContent = false;
 
 	public $content= [];
 
@@ -47,14 +48,15 @@ class HomeRevolutionSlider extends \yii\base\Widget
 				ArrayHelper::setValue($this->content, '1.title', 'We can solve');
 				ArrayHelper::setValue($this->content, '2.title', 'Trusted services');
 			}
-		}
+		} else 
+			$this->overwriteContent = true;
 	}
 
 	public function run() 
 	{
 		$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 
-		if(!$isDemoTheme) {
+		if(!$isDemoTheme && !$this->overwriteContent) {
 			$article = Articles::find()
 				->alias('t')
 				->select(['id','cat_id','title','body'])

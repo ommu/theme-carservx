@@ -26,7 +26,7 @@ echo \themes\carservx\components\HomeRevolutionSlider::widget([
 		[
 			'title' => $exception->statusCode.'<br/>'.nl2br(Html::encode($exception->getName())),
 			'intro' => nl2br(Html::encode($message)),
-			'image' => 'demo/images/main-slider/slider1/slide1.jpg',
+			'image' => 'images/error-bg.jpg',
 			'url' => [
 				'/report/site/add',
 				'url' => Yii::$app->request->absoluteUrl, 

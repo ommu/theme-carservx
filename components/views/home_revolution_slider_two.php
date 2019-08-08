@@ -12,8 +12,8 @@ use themes\carservx\assets\ThemePluginAsset;
 $themeAsset = ThemePluginAsset::register($this);
 \themes\carservx\assets\RevolutionSliderPluginAsset::register($this);
 $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-2.js', ['depends' => [ThemePluginAsset::className()]]);
-$imageUrl = $isDemoTheme ? $themeAsset->baseUrl : Url::to('@webpublic');
 $context = $this->context;
+$imageUrl = ($isDemoTheme || (!$isDemoTheme && $context->overwriteContent)) ? $themeAsset->baseUrl : Url::to('@webpublic');
 ?>
 
 <!-- SLIDER START -->
