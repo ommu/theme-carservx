@@ -6,12 +6,13 @@
 
 use yii\helpers\Html;
 use yii\helpers\Url;
+use yii\helpers\StringHelper;
 use themes\carservx\assets\ThemePluginAsset;
 
 $themeAsset = ThemePluginAsset::register($this);
 \themes\carservx\assets\RevolutionSliderPluginAsset::register($this);
 $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-2.js', ['depends' => [ThemePluginAsset::className()]]);
-$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
+$imageUrl = $isDemoTheme ? $themeAsset->baseUrl : Url::to('@webpublic');
 $context = $this->context;
 ?>
 
@@ -24,9 +25,9 @@ $context = $this->context;
 			foreach ($context->content as $key => $val) {
 				$i++;
 				$url = ($val['url'] && $val['url'] == '#') ? 'javascript:void();' : (is_array($val['url']) ? Url::to($val['url']) : Url::to([$val['url']]));  ?>
-			<li data-index="rs-<?php echo $i;?>" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="<?php echo join('/', [$themeAsset->baseUrl, $val['image']]); ?>" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="300" data-fsslotamount="7" data-saveperformance="off" data-title="Slide Title" data-param1="Additional Text" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+			<li data-index="rs-<?php echo $i;?>" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="<?php echo join('/', [$imageUrl, $val['image']]); ?>" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="300" data-fsslotamount="7" data-saveperformance="off" data-title="Slide Title" data-param1="Additional Text" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 				<?php //MAIN IMAGE; ?>
-				<img src="<?php echo join('/', [$themeAsset->baseUrl, $val['image']]); ?>" alt="" data-lazyload="<?php echo join('/', [$themeAsset->baseUrl, $val['image']]); ?>" data-bgposition="center center" data-bgfit="cover" data-bgparallax="4" class="rev-slidebg" data-no-retina>
+				<img src="<?php echo join('/', [$imageUrl, $val['image']]); ?>" alt="" data-lazyload="<?php echo join('/', [$imageUrl, $val['image']]); ?>" data-bgposition="center center" data-bgfit="cover" data-bgparallax="4" class="rev-slidebg" data-no-retina>
 				<?php //LAYERS; ?>
 				<?php //LAYER NR. 1 [ for overlay ]; ?>
 				<div class="tp-caption tp-shape tp-shapewrapper " id="slide-<?php echo $i;?>-layer-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames='[
@@ -44,7 +45,7 @@ $context = $this->context;
 				color:#fff;
 				font-family: 'Fjalla One', sans-serif;
 				letter-spacing:5px;">
-					<div class="text-uppercase slider_title bdr-primary">Your Vehicle is</div>
+					<div class="text-uppercase slider_title bdr-primary"><?php echo $val['category'];?></div>
 				</div>
 
 				<?php //LAYER NR. 4 [ for title ]; ?>
@@ -57,7 +58,7 @@ $context = $this->context;
 				color:#fff;
 				border-width:0px;">
 					<div style="font-family: 'Fjalla One', sans-serif;">
-						<span class="text-white text-uppercase"><?php echo $val['title'];?></span>
+						<span class="text-white text-uppercase"><?php echo StringHelper::truncate($val['title'], 15);?></span>
 					</div>
 
 				</div>

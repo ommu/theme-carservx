@@ -120,6 +120,7 @@ class HomeLatestNews extends \yii\base\Widget
 				$article->andWhere(['IN', 't.cat_id', $this->articleCategoryId]);
 			$limit = $this->isPotraitLayout ? 2 : 3;
 			$article = $article->limit($limit)
+				->orderBy('t.id DESC')
 				->all();
 
 			if($article) {
@@ -129,7 +130,6 @@ class HomeLatestNews extends \yii\base\Widget
 						'category' => $val->category->name_i,
 						'title' => $val->title,
 						'intro' => StringHelper::truncate(self::htmlHardDecode($val->body), 115),
-						'image' => 'demo/images/blog/latest-blog/pic3.jpg',
 						'image' => $val->cover ? join('/', [$val::getUploadPath(false), $val->id, $val->cover]) : 'default.png',
 						'url' => [
 							'article/site/view',

@@ -11,7 +11,6 @@ use themes\carservx\assets\ThemePluginAsset;
 $themeAsset = ThemePluginAsset::register($this);
 \themes\carservx\assets\RevolutionSliderPluginAsset::register($this);
 $this->registerJsFile($themeAsset->baseUrl . '/js/rev-script-3.js', ['depends' => [ThemePluginAsset::className()]]);
-$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 $context = $this->context;
 ?>
 
