@@ -16,7 +16,6 @@ if(count($context->title) > 1) {
 	$title = $context->title[0];
 	$intro = $context->title[1];
 } ?>
-?>
 
 <div class="section-full <?php echo $context->paddingTop ? 'p-t80' : '';?> <?php echo $context->paddingBottom ? 'p-b40' : '';?> <?php echo $context->bgClass;?>">
 	<div class="container">

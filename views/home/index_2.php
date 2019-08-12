@@ -3,7 +3,7 @@
  * @var $this app\components\View
  * @var $this themes\carservx\controllers\HomeController
  *
- * @author Putra Sudaryanto <putra@sudaryanto.id>
+ * @author Putra Sudaryanto <putra@ommu.co>
  * @contact (+62)856-299-4114
  * @copyright Copyright (c) 2019 OMMU (www.ommu.co)
  * @created date 22 July 2019, 10:21 WIB
