@@ -74,7 +74,7 @@ class HomeRevolutionSlider extends \yii\base\Widget
 						'intro' => StringHelper::truncate(self::htmlHardDecode($val->body), 160),
 						'image' => $val->cover ? join('/', [$val::getUploadPath(false), $val->id, $val->cover]) : 'default.png',
 						'url' => [
-							'article/site/view',
+							'article/view',
 							't' => Inflector::slug($val->title),
 							'id' => $val->id,
 						],

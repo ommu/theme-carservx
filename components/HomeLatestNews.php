@@ -132,12 +132,12 @@ class HomeLatestNews extends \yii\base\Widget
 						'intro' => StringHelper::truncate(self::htmlHardDecode($val->body), 115),
 						'image' => $val->cover ? join('/', [$val::getUploadPath(false), $val->id, $val->cover]) : 'default.png',
 						'url' => [
-							'article/site/view',
+							'article/view',
 							't' => Inflector::slug($val->title),
 							'id' => $val->id,
 						],
 						'creationName' => isset($val->creation) ? $val->creation->displayname : 'Smart Auto CBU',
-						'creationPhoto' => (isset($val->creation) && $val->creation->photos) ? join('/', [$val->creation::getUploadPath(false), $val->creation_id, $val->creation->photos]) : 'default.png',
+						'creationPhoto' => (isset($val->creation) && $val->creation->photos) ? join('/', [$val->creation::getUploadPath(false), $val->creation_id, $val->creation->photos]) : 'user_default.png',
 						'creationDate' => Yii::$app->formatter->asDate($val->creation_date, 'long'),
 					];
 				}
