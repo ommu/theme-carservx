@@ -7,7 +7,7 @@
  * @contact (+62)856-299-4114
  * @copyright Copyright (c) 2019 OMMU (www.ommu.co)
  * @created date 20 February 2019, 15:35 WIB
- * @link https://github.com/ommu/theme-carservx
+ * @link https://bitbucket.org/ommu/theme-carservx
  *
  */
 
