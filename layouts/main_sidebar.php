@@ -8,6 +8,7 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 
 $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
+$isDemoTheme = Yii::$app->isDemoTheme() ? true : false;
 ?>
 
 <?php $this->beginContent('@themes/carservx/layouts/main.php'); ?>
@@ -20,6 +21,7 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 	<div class="col-md-4 col-sm-12">
 		<aside class="side-bar">
 			<?php //begin.search ?>
+			<?php if($isDemoTheme) {?>
 			<div class="widget bg-white ">
 				<h4 class="widget-title">Search</h4>
 				<div class="search-bx">
@@ -33,18 +35,10 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 					</form>
 				</div>
 			</div>
+			<?php }?>
 
-			<?php //begin.categories ?>
-			<div class="widget bg-white  widget_services">
-				<h4 class="widget-title">Categories</h4>
-				<ul>
-					<li><a href="javascript:void(0);">Fluid</a><span class="badge">28</span></li>
-					<li><a href="javascript:void(0);">Diagnostic</a><span class="badge">05</span></li>
-					<li><a href="javascript:void(0);">Filters</a><span class="badge">24</span></li>
-					<li><a href="javascript:void(0);">Electical</a><span class="badge">15</span></li>
-					<li><a href="javascript:void(0);">Certified</a><span class="badge">20</span></li>
-				</ul>
-			</div>
+			<?php //begin.categories
+			echo \themes\carservx\components\SidebarArticleCategory::widget(); ?>
 
 			<?php //begin.recent post ?>
 			<div class="widget bg-white  recent-posts-entry">
@@ -104,6 +98,7 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 			</div>
 
 			<?php //begin.tag ?>
+			<?php if($isDemoTheme) {?>
 			<div class="widget bg-white  widget_tag_cloud">
 				<h4 class="widget-title">Tags</h4>
 				<div class="tagcloud">
@@ -121,6 +116,7 @@ $themeAsset = \themes\carservx\assets\ThemePluginAsset::register($this);
 					<a href="javascript:void(0);">Macho</a>
 				</div>
 			</div>
+			<?php }?>
 		</aside>
 	</div>
 </div>

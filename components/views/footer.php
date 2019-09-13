@@ -31,7 +31,7 @@ $context = $this->context;
 			<div class="footer-bottom">
 				<div class="row">
 					<div class="wt-footer-bot-left">
-						<span class="copyrights-text">© 2019 <?php echo $context->siteName;?>. All Rights Reserved. 
+						<span class="copyrights-text">&copy; <?php echo date("Y");?> <?php echo $context->siteName;?>. All Rights Reserved. 
 						<?php if($isDemoTheme) {?>Designed By <span class="text-primary"> thewebmax.</span><?php }?>
 						</span>
 					</div>

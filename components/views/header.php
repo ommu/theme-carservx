@@ -22,14 +22,15 @@ $context = $this->context;
 						</a>
 					</div>
 				</div>
-				<!-- NAV Toggle Button -->
+
 				<button data-target=".header-nav" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<!-- ETRA Nav -->
+
+				<?php if($isDemoTheme) {?>
 				<div class="extra-nav header-2-nav">
 					<div class="extra-cell">
 						<div class="search-wrap">
@@ -42,11 +43,14 @@ $context = $this->context;
 						</div>
 					</div>
 				</div>
-				<!-- ETRA Nav -->
+				<?php }?>
+
 				<div class="extra-nav header-2-nav">
 					<div class="extra-cell">
 						<div class="social-wrap">
 							<div class="full-social-bg">
+								<?php $url = urlencode(Yii::$app->request->absoluteUrl);
+								$title = urlencode($this->title);?>
 								<ul>
 									<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
 									<li><a href="#" class="google"><i class="fa fa-google"></i></a></li>
@@ -60,7 +64,7 @@ $context = $this->context;
 						</div>
 					</div>
 				</div>
-				<!-- MAIN Vav -->
+
 				<div class="header-nav nav-animation navbar-collapse collapse">
 					<?php echo \themes\carservx\components\Menu::widget([
 						'options' => ['class'=>'nav navbar-nav'],
