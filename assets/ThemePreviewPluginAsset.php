@@ -18,6 +18,8 @@ class ThemePreviewPluginAsset extends \yii\web\AssetBundle
 
 	public $css = [
 		"css/preview/style.css",
+		"https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,500italic,700,700italic,900italic,900",
+		"https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800italic,800,700italic",
 	];
 
 	public $js = [

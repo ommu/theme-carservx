@@ -20,6 +20,9 @@ class ThemeAsset extends \yii\web\AssetBundle
 		"css/loader.min.css",
 		"css/style.css",
 		"css/flaticon.min.css",
+		"https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,800,800i,900",
+		"https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i",
+		"https://fonts.googleapis.com/css?family=Fjalla+One",
 	];
 
 	public $depends = [
