@@ -35,10 +35,19 @@ $this->beginPage();?>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<?php echo Html::csrfMetaTags() ?>
 	<title><?php echo Html::encode($this->pageTitle) ?></title>
-	<?php $this->head(); ?>
-	<script type="text/javascript">
-		var themeAssetUrl = '<?php echo $themeAsset->baseUrl ?>';
-	</script>
+	<?php $this->head();
+	$baseUrl = Yii::getAlias('@web');
+$js = <<<JS
+	const baseUrl = '{$baseUrl}';
+	const themeAssetUrl = '{$themeAsset->baseUrl}';
+	const version = '1';
+if ('serviceWorker' in navigator) {
+	window.addEventListener('load', function() {
+		navigator.serviceWorker.register(baseUrl + '/service-worker.js?v='+version+'&bu='+baseUrl+'&tu='+themeAssetUrl);
+	});
+}
+JS;
+$this->registerJs($js, $this::POS_HEAD); ?>
 </head>
 
 <body>
