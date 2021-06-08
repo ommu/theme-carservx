@@ -8,7 +8,15 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 ?>
 
-<?php $this->beginContent('@themes/carservx/layouts/front_default.php'); ?>
+<?php 
+$context = $this->context;
+if ($context->hasMethod('isVisitorBanned')) {
+    if ($context->isVisitorBanned() === true) {
+        throw new \yii\web\ForbiddenHttpException(Yii::t('app', 'You are not allowed to access this page.'));
+    }
+}
+
+$this->beginContent('@themes/carservx/layouts/front_default.php'); ?>
 
 <div class="section-full p-t80 p-b50">
 	<div class="container">
