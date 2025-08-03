@@ -23,4 +23,4 @@ to the require section of your composer.json.
 
 Preview
 ------------
-https://theme.ommu.co/carservx-site
+https://theme.ommu.id/carservx-site

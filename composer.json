@@ -13,8 +13,7 @@
 		"car-service",
 		"car-repair",
 		"bootstrap3",
-		"ommu",
-		"ommu-platform",
+		"ommu2",
 		"yii2"
 	],
 	"license": "Apache-2.0",
